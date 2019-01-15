@@ -1,0 +1,15 @@
+*.qxp
+*.cdf
+*.done
+*.qsf
+*.qws
+*.ini
+*.sdc
+*.qarlog
+*.rpt
+*.summary
+*.smsg
+*.jdi
+*.pin
+**/db
+**/incremental_db

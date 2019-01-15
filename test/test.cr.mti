@@ -1,1 +1,15 @@
+C:/Users/stfar/cpen311/test/test_top.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/test/test_top.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module test_top
 
+Top level modules:
+	test_top
+
+} {} {}} C:/Users/stfar/cpen311/test/test_top_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/test/test_top_tb.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module test_top_tb
+
+Top level modules:
+	test_top_tb
+
+} {} {}}

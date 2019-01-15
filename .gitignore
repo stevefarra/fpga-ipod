@@ -1,0 +1,20 @@
+# ModelSim output files
+work/
+*.mti
+*.mpf
+*.wlf
+
+# Quartus output files
+db/
+incremental_db/
+*.qarlog
+*.qxp
+*.rpt
+*.cdf
+*.done
+*.smsg
+*.summary
+*.jdi
+*.pin
+*.qsf
+*.sdc

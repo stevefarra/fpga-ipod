@@ -2,6 +2,8 @@
 // 50*10^6 is 26 bits, +1 for sign bit
 // Frequencies are given in case statement
 
+`timescale 1ns/1ps
+
 module clock_divider(input  logic       in_clk,
                      input  logic [2:0] sel,
                      input  logic       reset,
@@ -29,6 +31,7 @@ module clock_divider(input  logic       in_clk,
             4'b1_101: inc = 880;
             4'b1_110: inc = 987;
             4'b1_111: inc = 1046;
+            default:  inc = 27'b0;
         endcase
 
     assign new_count = count + inc;

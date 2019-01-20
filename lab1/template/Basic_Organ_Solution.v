@@ -234,13 +234,12 @@ note_selector
      .sel (SW[3:1]),
      .out (half_num_clk_cycles));
 
-Generate_Arbitrary_Divided_Clk32 
+clk_divider
 gen_clk_note
-    (.inclk         (CLK_50M),
-     .outclk        (clk_note),
-     .outclk_Not    (),
-     .div_clk_count (half_num_clk_cycles),
-     .Reset         (1'h1)); 
+    (.rst                 (~KEY[0]),
+     .half_num_clk_cycles (half_num_clk_cycles),
+     .clk_in              (CLK_50M),
+     .clk_out             (clk_note));
 
 assign Sample_Clk_Signal = clk_note;
 
@@ -248,9 +247,6 @@ assign Sample_Clk_Signal = clk_note;
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed
 wire [7:0] audio_data = {(~Sample_Clk_Signal),{7{Sample_Clk_Signal}}}; //generate signed sample audio signal
 
-
-
-                
 //=====================================================================================
 //
 // LCD Scope Acquisition Circuitry Wire Definitions                 

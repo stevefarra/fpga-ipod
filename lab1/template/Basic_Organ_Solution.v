@@ -197,31 +197,23 @@ wire Sample_Clk_Signal;
 
 //=======================================================================================================================
 //
-// Insert your code for Lab1 here!
+// My code
 //
-//
-wire [15:0] doe;
-wire [15:0] re;
-wire [15:0] mi;
-wire [15:0] fa;
-wire [15:0] so;
-wire [15:0] la;
-wire [15:0] ti;
-wire [15:0] doe2;
-
-assign doe  = 16'hBAB9;
-assign re   = 16'hA65D;
-assign mi   = 16'h9430;
-assign fa   = 16'h8BE8;
-assign so   = 16'h7CB8;
-assign la   = 16'h6EF9;
-assign ti   = 16'h62F1;
-assign doe2 = 16'h5D5C;
+//=======================================================================================================================
 
 wire [15:0] half_num_clk_cycles;
 wire        clk_note;
 
-mux8
+parameter doe =  16'hbab9;
+parameter re =   16'ha65d;
+parameter mi =   16'h9430;
+parameter fa =   16'h8be8;
+parameter so =   16'h7cb8;
+parameter la =   16'h6ef9;
+parameter ti =   16'h62f1;
+parameter doe2 = 16'h5d5c;
+
+mux8 #(16)
 note_selector
     (.in1 (doe),
      .in2 (re),
@@ -236,7 +228,7 @@ note_selector
 
 clk_divider
 gen_clk_note
-    (.rst                 (~KEY[0]),
+    (.rst                 (~SW[0]),
      .half_num_clk_cycles (half_num_clk_cycles),
      .clk_in              (CLK_50M),
      .clk_out             (clk_note));
@@ -246,6 +238,37 @@ assign Sample_Clk_Signal = clk_note;
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed
 wire [7:0] audio_data = {(~Sample_Clk_Signal),{7{Sample_Clk_Signal}}}; //generate signed sample audio signal
+
+//-------------------------------------------------------------------------------------
+
+wire [24:0] switch_characters;
+wire [32:0] freq_characters;
+
+mux8 #(24)
+ScopeInfoA_selector
+    (.in1 ({character_0,character_0,character_0}),
+     .in2 ({character_0,character_0,character_1}),
+     .in3 ({character_0,character_1,character_0}),
+     .in4 ({character_0,character_1,character_1}),
+     .in5 ({character_1,character_0,character_0}),
+     .in6 ({character_1,character_0,character_1}),
+     .in7 ({character_1,character_1,character_0}),
+     .in8 ({character_1,character_1,character_1}),
+     .sel (SW[3:1]),
+     .out (switch_characters));
+
+mux8 #(32)
+ScopeInfoB_selector
+    (.in1 ({character_lowercase_b,character_lowercase_a,character_lowercase_b,character_9}),
+     .in2 ({character_lowercase_a,character_6,character_5,character_lowercase_d}),
+     .in3 ({character_9,character_4,character_3,character_0}),
+     .in4 ({character_8,character_lowercase_b,character_lowercase_e,character_8}),
+     .in5 ({character_7,character_lowercase_c,character_lowercase_b,character_8}),
+     .in6 ({character_6,character_lowercase_e,character_lowercase_f,character_9}),
+     .in7 ({character_6,character_2,character_lowercase_f,character_1}),
+     .in8 ({character_5,character_lowercase_d,character_5,character_lowercase_c}),
+     .sel (SW[3:1]),
+     .out (freq_characters));
 
 //=====================================================================================
 //
@@ -303,47 +326,47 @@ scope_capture LCD_scope_channelB
 assign LCD_ON   = 1'b1;
 //The LCD scope and display
 LCD_Scope_Encapsulated_pacoblaze_wrapper LCD_LED_scope(
-                        //LCD control signals
-                          .lcd_d(LCD_DATA),//don't touch
-                    .lcd_rs(LCD_RS), //don't touch
-                    .lcd_rw(LCD_RW), //don't touch
-                    .lcd_e(LCD_EN), //don't touch
-                    .clk(CLK_50M),  //don't touch
+                    //LCD control signals
+                    .lcd_d(LCD_DATA), //don't touch
+                    .lcd_rs(LCD_RS),  //don't touch
+                    .lcd_rw(LCD_RW),  //don't touch
+                    .lcd_e(LCD_EN),   //don't touch
+                    .clk(CLK_50M),    //don't touch
                           
-                        //LCD Display values
-                      .InH(8'hAA),
-                      .InG(8'hBB),
-                      .InF(8'h01),
-                       .InE(8'h23),
-                      .InD(8'h45),
-                      .InC(8'h67),
-                      .InB(8'h89),
-                     .InA(8'h00),
+                    //LCD Display values
+                    .InH(8'hDE),
+                    .InG(8'hAD),
+                    .InF(8'hBE),
+                    .InE(8'hEF),
+                    .InD(8'hCA),
+                    .InC(8'hFE),
+                    .InB(8'hBA),
+                    .InA(8'hBE),
                           
-                     //LCD display information signals
-                         .InfoH({character_A,character_U}),
-                          .InfoG({character_S,character_W}),
-                          .InfoF({character_space,character_A}),
-                          .InfoE({character_N,character_space}),
-                          .InfoD({character_E,character_X}),
-                          .InfoC({character_A,character_M}),
-                          .InfoB({character_P,character_L}),
-                          .InfoA({character_E,character_exclaim}),
+                    //LCD display information signals
+                    .InfoH({character_C,character_lowercase_o}),
+                    .InfoG({character_lowercase_o,character_lowercase_l}),
+                    .InfoF({character_space,character_lowercase_t}),
+                    .InfoE({character_lowercase_o,character_lowercase_n}),
+                    .InfoD({character_lowercase_e,character_space}),
+                    .InfoC({character_lowercase_o,character_lowercase_r}),
+                    .InfoB({character_lowercase_g,character_lowercase_a}),
+                    .InfoA({character_lowercase_n,character_exclaim}),
                           
-                  //choose to display the values or the oscilloscope
-                          .choose_scope_or_LCD(choose_LCD_or_SCOPE),
+                    //choose to display the values or the oscilloscope
+                    .choose_scope_or_LCD(choose_LCD_or_SCOPE),
                           
-                  //scope channel declarations
-                          .scope_channelA(scope_channelA), //don't touch
-                          .scope_channelB(scope_channelB), //don't touch
+                    //scope channel declarations
+                    .scope_channelA(scope_channelA), //don't touch
+                    .scope_channelB(scope_channelB), //don't touch
                           
-                  //scope information generation
-                          .ScopeInfoA({character_1,character_K,character_H,character_lowercase_z}),
-                          .ScopeInfoB({character_S,character_W,character_1,character_space}),
+                    //scope information generation
+                    .ScopeInfoA({switch_characters,character_space}),
+                    .ScopeInfoB(freq_characters),
                           
-                 //enable_scope is used to freeze the scope just before capturing 
-                 //the waveform for display (otherwise the sampling would be unreliable)
-                          .enable_scope(allow_run_LCD_scope) //don't touch
+                    //enable_scope is used to freeze the scope just before capturing 
+                    //the waveform for display (otherwise the sampling would be unreliable)
+                    .enable_scope(allow_run_LCD_scope) //don't touch
                           
     );  
     

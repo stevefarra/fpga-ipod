@@ -19,7 +19,7 @@ module LCD_Scope_Encapsulated_pacoblaze_wrapper
 								input wire[15:0] InfoE,
 								input wire[15:0] InfoF,	
 								input wire[15:0] InfoG,
-							   input wire[15:0] InfoH,
+							    input wire[15:0] InfoH,
 								input wire[31:0] ScopeInfoA,
 								input wire[31:0] ScopeInfoB,
 								input wire choose_scope_or_LCD,

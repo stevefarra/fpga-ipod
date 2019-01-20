@@ -200,16 +200,49 @@ wire Sample_Clk_Signal;
 // Insert your code for Lab1 here!
 //
 //
-            
+wire [15:0] doe;
+wire [15:0] re;
+wire [15:0] mi;
+wire [15:0] fa;
+wire [15:0] so;
+wire [15:0] la;
+wire [15:0] ti;
+wire [15:0] doe2;
 
+assign doe  = 16'hBAB9;
+assign re   = 16'hA65D;
+assign mi   = 16'h9430;
+assign fa   = 16'h8BE8;
+assign so   = 16'h7CB8;
+assign la   = 16'h6EF9;
+assign ti   = 16'h62F1;
+assign doe2 = 16'h5D5C;
 
+wire [15:0] half_num_clk_cycles;
+wire        clk_note;
 
+mux8
+note_selector
+    (.in1 (doe),
+     .in2 (re),
+     .in3 (mi),
+     .in4 (fa),
+     .in5 (so),
+     .in6 (la),
+     .in7 (ti),
+     .in8 (doe2),
+     .sel (SW[3:1]),
+     .out (half_num_clk_cycles));
 
+Generate_Arbitrary_Divided_Clk32 
+gen_clk_note
+    (.inclk         (CLK_50M),
+     .outclk        (clk_note),
+     .outclk_Not    (),
+     .div_clk_count (half_num_clk_cycles),
+     .Reset         (1'h1)); 
 
-
-            
-
-assign Sample_Clk_Signal = Clock_1KHz;
+assign Sample_Clk_Signal = clk_note;
 
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed

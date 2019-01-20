@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Basic_Organ_Solution
-Sat Jan 19 17:10:50 2019
+Sat Jan 19 18:48:30 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -19,48 +19,52 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  11. General Register Statistics
  12. Inverted Register Statistics
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk
- 15. Source assignments for LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst
- 16. Source assignments for Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk
- 17. Source assignments for async_trap_and_reset_gen_1_pulse:make_speedup_pulse
- 18. Source assignments for async_trap_and_reset_gen_1_pulse:make_speedown_pulse
- 19. Source assignments for speed_reg_control:speed_reg_control_inst
- 20. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0
- 21. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1
- 22. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2
- 23. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3
- 24. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4
- 25. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5
- 26. Source assignments for Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk
- 27. Source assignments for to_slow_clk_interface:interface_actual_audio_data_right
- 28. Source assignments for to_slow_clk_interface:interface_actual_audio_data_left
- 29. Source assignments for audio_controller:audio_control
- 30. Source assignments for Top-level Entity: |Basic_Organ_Solution
- 31. Source assignments for sld_signaltap:auto_signaltap_0
- 32. Parameter Settings for User Entity Instance: Top-level Entity: |Basic_Organ_Solution
- 33. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelA
- 34. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelB
- 35. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
- 36. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_right
- 37. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_left
- 38. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 39. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk"
- 40. Port Connectivity Checks: "doublesync:key2_doublsync"
- 41. Port Connectivity Checks: "doublesync:key1_doublsync"
- 42. Port Connectivity Checks: "doublesync:key0_doublsync"
- 43. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk"
- 44. Port Connectivity Checks: "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope"
- 45. Port Connectivity Checks: "scope_capture:LCD_scope_channelB"
- 46. Port Connectivity Checks: "scope_capture:LCD_scope_channelA|doublesync:sync_enable"
- 47. Port Connectivity Checks: "scope_capture:LCD_scope_channelA"
- 48. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk"
- 49. Port Connectivity Checks: "doublesync:user_scope_enable_sync1"
- 50. SignalTap II Logic Analyzer Settings
- 51. Post-Synthesis Netlist Statistics for Top Partition
- 52. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 53. Elapsed Time Per Partition
- 54. Connections to In-System Debugging Instance "auto_signaltap_0"
- 55. Analysis & Synthesis Messages
+ 14. Source assignments for Generate_Arbitrary_Divided_Clk32:gen_clk_note|var_clk_div32:Div_Clk
+ 15. Source assignments for Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk
+ 16. Source assignments for LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst
+ 17. Source assignments for Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk
+ 18. Source assignments for async_trap_and_reset_gen_1_pulse:make_speedup_pulse
+ 19. Source assignments for async_trap_and_reset_gen_1_pulse:make_speedown_pulse
+ 20. Source assignments for speed_reg_control:speed_reg_control_inst
+ 21. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0
+ 22. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1
+ 23. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2
+ 24. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3
+ 25. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4
+ 26. Source assignments for SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5
+ 27. Source assignments for Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk
+ 28. Source assignments for to_slow_clk_interface:interface_actual_audio_data_right
+ 29. Source assignments for to_slow_clk_interface:interface_actual_audio_data_left
+ 30. Source assignments for audio_controller:audio_control
+ 31. Source assignments for Top-level Entity: |Basic_Organ_Solution
+ 32. Source assignments for sld_signaltap:auto_signaltap_0
+ 33. Parameter Settings for User Entity Instance: Top-level Entity: |Basic_Organ_Solution
+ 34. Parameter Settings for User Entity Instance: mux8:note_selector
+ 35. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelA
+ 36. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelB
+ 37. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
+ 38. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_right
+ 39. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_left
+ 40. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 41. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk"
+ 42. Port Connectivity Checks: "doublesync:key2_doublsync"
+ 43. Port Connectivity Checks: "doublesync:key1_doublsync"
+ 44. Port Connectivity Checks: "doublesync:key0_doublsync"
+ 45. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk"
+ 46. Port Connectivity Checks: "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope"
+ 47. Port Connectivity Checks: "scope_capture:LCD_scope_channelB"
+ 48. Port Connectivity Checks: "scope_capture:LCD_scope_channelA|doublesync:sync_enable"
+ 49. Port Connectivity Checks: "scope_capture:LCD_scope_channelA"
+ 50. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk"
+ 51. Port Connectivity Checks: "doublesync:user_scope_enable_sync1"
+ 52. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:gen_clk_note"
+ 53. Port Connectivity Checks: "mux8:note_selector"
+ 54. SignalTap II Logic Analyzer Settings
+ 55. Post-Synthesis Netlist Statistics for Top Partition
+ 56. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
+ 57. Elapsed Time Per Partition
+ 58. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 59. Analysis & Synthesis Messages
 
 
 
@@ -87,13 +91,13 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Jan 19 17:10:50 2019      ;
+; Analysis & Synthesis Status     ; Successful - Sat Jan 19 18:48:29 2019      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; Basic_Organ_Solution                       ;
 ; Top-level Entity Name           ; Basic_Organ_Solution                       ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 5262                                       ;
+; Total registers                 ; 5301                                       ;
 ; Total pins                      ; 147                                        ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 55,552                                     ;
@@ -204,12 +208,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.09        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   2.9%      ;
+;     Processors 2-4         ; < 0.1%      ;
 +----------------------------+-------------+
 
 
@@ -226,8 +230,9 @@ agreement for further details.
 ; audio_controller.qxp                                   ; yes             ; User File                                    ; C:/Users/stfar/cpen311/lab1/template/audio_controller.qxp                                   ;             ;
 ; async_trap_and_reset_gen_1_pulse.qxp                   ; yes             ; User File                                    ; C:/Users/stfar/cpen311/lab1/template/async_trap_and_reset_gen_1_pulse.qxp                   ;             ;
 ; Basic_Organ_Solution.v                                 ; yes             ; User Verilog HDL File                        ; C:/Users/stfar/cpen311/lab1/template/Basic_Organ_Solution.v                                 ;             ;
-; doublesync.v                                           ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/stfar/cpen311/lab1/template/doublesync.v                                           ;             ;
+; mux8.sv                                                ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/stfar/cpen311/lab1/template/mux8.sv                                                ;             ;
 ; generate_arbitrary_divided_clk32.v                     ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/stfar/cpen311/lab1/template/generate_arbitrary_divided_clk32.v                     ;             ;
+; doublesync.v                                           ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/stfar/cpen311/lab1/template/doublesync.v                                           ;             ;
 ; scope_capture.v                                        ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/stfar/cpen311/lab1/template/scope_capture.v                                        ;             ;
 ; lcd_scope_encapsulated_pacoblaze_wrapper.v             ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/stfar/cpen311/lab1/template/lcd_scope_encapsulated_pacoblaze_wrapper.v             ;             ;
 ; sld_signaltap.vhd                                      ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/sld_signaltap.vhd                            ;             ;
@@ -292,16 +297,16 @@ agreement for further details.
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 3099                                                                                 ;
+; Estimate of Logic utilization (ALMs needed) ; 3127                                                                                 ;
 ;                                             ;                                                                                      ;
-; Combinational ALUT usage for logic          ; 1997                                                                                 ;
+; Combinational ALUT usage for logic          ; 2059                                                                                 ;
 ;     -- 7 input functions                    ; 22                                                                                   ;
-;     -- 6 input functions                    ; 820                                                                                  ;
+;     -- 6 input functions                    ; 832                                                                                  ;
 ;     -- 5 input functions                    ; 455                                                                                  ;
 ;     -- 4 input functions                    ; 139                                                                                  ;
-;     -- <=3 input functions                  ; 561                                                                                  ;
+;     -- <=3 input functions                  ; 611                                                                                  ;
 ;                                             ;                                                                                      ;
-; Dedicated logic registers                   ; 5262                                                                                 ;
+; Dedicated logic registers                   ; 5301                                                                                 ;
 ;                                             ;                                                                                      ;
 ; I/O pins                                    ; 147                                                                                  ;
 ; Total MLAB memory bits                      ; 0                                                                                    ;
@@ -311,7 +316,7 @@ agreement for further details.
 ;                                             ;                                                                                      ;
 ; Maximum fan-out node                        ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ;
 ; Maximum fan-out                             ; 2712                                                                                 ;
-; Total fan-out                               ; 31016                                                                                ;
+; Total fan-out                               ; 31362                                                                                ;
 ; Average fan-out                             ; 3.90                                                                                 ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 
@@ -321,13 +326,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                         ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Basic_Organ_Solution                                                                                   ; 1997 (45)         ; 5262 (50)    ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                       ; work         ;
-;    |Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|                                                      ; 49 (1)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk                                                                                                                                                                                                                                                                                         ; work         ;
+; |Basic_Organ_Solution                                                                                   ; 2059 (46)         ; 5301 (50)    ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                       ; work         ;
+;    |Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|                                                      ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk                                                                                                                                                                                                                                                                                         ; work         ;
 ;       |var_clk_div32:Div_Clk|                                                                           ; 48 (48)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk                                                                                                                                                                                                                                                                   ; work         ;
 ;    |Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|                                                       ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk                                                                                                                                                                                                                                                                                          ; work         ;
 ;       |var_clk_div32:Div_Clk|                                                                           ; 48 (48)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk                                                                                                                                                                                                                                                                    ; work         ;
 ;    |Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|                                            ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk                                                                                                                                                                                                                                                                               ; work         ;
 ;       |var_clk_div32:Div_Clk|                                                                           ; 48 (48)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk                                                                                                                                                                                                                                                         ; work         ;
+;    |Generate_Arbitrary_Divided_Clk32:gen_clk_note|                                                      ; 49 (1)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:gen_clk_note                                                                                                                                                                                                                                                                                         ; work         ;
+;       |var_clk_div32:Div_Clk|                                                                           ; 48 (48)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:gen_clk_note|var_clk_div32:Div_Clk                                                                                                                                                                                                                                                                   ; work         ;
 ;    |LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|                                             ; 776 (0)           ; 1020 (0)     ; 18432             ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope                                                                                                                                                                                                                                                                                ; work         ;
 ;       |LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|                          ; 776 (0)           ; 1020 (0)     ; 18432             ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst                                                                                                                                                                                                         ; work         ;
 ;          |LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope|                                               ; 776 (115)         ; 1020 (38)    ; 18432             ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope                                                                                                                                                          ; work         ;
@@ -360,6 +367,7 @@ agreement for further details.
 ;    |doublesync:key1_doublsync|                                                                          ; 1 (1)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|doublesync:key1_doublsync                                                                                                                                                                                                                                                                                                             ; work         ;
 ;    |doublesync:key2_doublsync|                                                                          ; 1 (1)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|doublesync:key2_doublsync                                                                                                                                                                                                                                                                                                             ; work         ;
 ;    |doublesync:user_scope_enable_sync1|                                                                 ; 0 (0)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|doublesync:user_scope_enable_sync1                                                                                                                                                                                                                                                                                                    ; work         ;
+;    |mux8:note_selector|                                                                                 ; 13 (13)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|mux8:note_selector                                                                                                                                                                                                                                                                                                                    ; work         ;
 ;    |scope_capture:LCD_scope_channelA|                                                                   ; 0 (0)             ; 18 (16)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|scope_capture:LCD_scope_channelA                                                                                                                                                                                                                                                                                                      ; work         ;
 ;       |doublesync:sync_enable|                                                                          ; 0 (0)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|scope_capture:LCD_scope_channelA|doublesync:sync_enable                                                                                                                                                                                                                                                                               ; work         ;
 ;    |scope_capture:LCD_scope_channelB|                                                                   ; 0 (0)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|scope_capture:LCD_scope_channelB                                                                                                                                                                                                                                                                                                      ; work         ;
@@ -738,10 +746,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5262  ;
+; Total registers                              ; 5301  ;
 ; Number of registers using Synchronous Clear  ; 128   ;
-; Number of registers using Synchronous Load   ; 1565  ;
-; Number of registers using Asynchronous Clear ; 1455  ;
+; Number of registers using Synchronous Load   ; 1597  ;
+; Number of registers using Asynchronous Clear ; 1491  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 962   ;
 ; Number of registers using Preset             ; 0     ;
@@ -785,6 +793,130 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 34:1               ; 4 bits    ; 88 LEs        ; 64 LEs               ; 24 LEs                 ; Yes        ; |Basic_Organ_Solution|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[2]                      ;
 ; 20:1               ; 4 bits    ; 52 LEs        ; 36 LEs               ; 16 LEs                 ; Yes        ; |Basic_Organ_Solution|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[2]      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Source assignments for Generate_Arbitrary_Divided_Clk32:gen_clk_note|var_clk_div32:Div_Clk                      ;
++--------------------------------------------------------------------------------+--------------------+------+----+
+; Assignment                                                                     ; Value              ; From ; To ;
++--------------------------------------------------------------------------------+--------------------+------+----+
+; ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP                                            ; OFF                ;      ;    ;
+; SYNCHRONIZATION_REGISTER_CHAIN_LENGTH                                          ; 3                  ;      ;    ;
+; OPTIMIZE_POWER_DURING_SYNTHESIS                                                ; NORMAL COMPILATION ;      ;    ;
+; TXPMA_SLEW_RATE                                                                ; LOW                ;      ;    ;
+; ADCE_ENABLED                                                                   ; AUTO               ;      ;    ;
+; BLOCK_RAM_TO_MLAB_CELL_CONVERSION                                              ; ON                 ;      ;    ;
+; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS                              ; AUTO               ;      ;    ;
+; BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES                         ; CARE               ;      ;    ;
+; OPTIMIZE_POWER_DURING_FITTING                                                  ; OFF                ;      ;    ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA                                        ; OFF                ;      ;    ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC                                                 ; ON                 ;      ;    ;
+; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION                                        ; OFF                ;      ;    ;
+; PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA                                ; OFF                ;      ;    ;
+; PHYSICAL_SYNTHESIS_REGISTER_RETIMING                                           ; ON                 ;      ;    ;
+; PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING                              ; OFF                ;      ;    ;
+; ENABLE_BENEFICIAL_SKEW_OPTIMIZATION                                            ; ON                 ;      ;    ;
+; FORM_DDR_CLUSTERING_CLIQUE                                                     ; OFF                ;      ;    ;
+; POWER_REPORT_SIGNAL_ACTIVITY                                                   ; OFF                ;      ;    ;
+; POWER_REPORT_POWER_DISSIPATION                                                 ; OFF                ;      ;    ;
+; ARRIAIIGX_RX_CDR_LOCKUP_FIX_OVERRIDE                                           ; OFF                ;      ;    ;
+; MUX_RESTRUCTURE                                                                ; AUTO               ;      ;    ;
+; MLAB_ADD_TIMING_CONSTRAINTS_FOR_MIXED_PORT_FEED_THROUGH_MODE_SETTING_DONT_CARE ; OFF                ;      ;    ;
+; STATE_MACHINE_PROCESSING                                                       ; AUTO               ;      ;    ;
+; SAFE_STATE_MACHINE                                                             ; OFF                ;      ;    ;
+; IGNORE_VERILOG_INITIAL_CONSTRUCTS                                              ; OFF                ;      ;    ;
+; VERILOG_CONSTANT_LOOP_LIMIT                                                    ; 5000               ;      ;    ;
+; VERILOG_NON_CONSTANT_LOOP_LIMIT                                                ; 5000               ;      ;    ;
+; INFER_RAMS_FROM_RAW_LOGIC                                                      ; ON                 ;      ;    ;
+; DSP_BLOCK_BALANCING                                                            ; AUTO               ;      ;    ;
+; NOT_GATE_PUSH_BACK                                                             ; ON                 ;      ;    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS                                                   ; OFF                ;      ;    ;
+; REMOVE_DUPLICATE_REGISTERS                                                     ; ON                 ;      ;    ;
+; IGNORE_CARRY_BUFFERS                                                           ; OFF                ;      ;    ;
+; IGNORE_CASCADE_BUFFERS                                                         ; OFF                ;      ;    ;
+; IGNORE_GLOBAL_BUFFERS                                                          ; OFF                ;      ;    ;
+; IGNORE_ROW_GLOBAL_BUFFERS                                                      ; OFF                ;      ;    ;
+; IGNORE_LCELL_BUFFERS                                                           ; OFF                ;      ;    ;
+; MAX7000_IGNORE_LCELL_BUFFERS                                                   ; AUTO               ;      ;    ;
+; IGNORE_SOFT_BUFFERS                                                            ; ON                 ;      ;    ;
+; MAX7000_IGNORE_SOFT_BUFFERS                                                    ; OFF                ;      ;    ;
+; AUTO_GLOBAL_CLOCK_MAX                                                          ; ON                 ;      ;    ;
+; AUTO_GLOBAL_OE_MAX                                                             ; ON                 ;      ;    ;
+; MAX_AUTO_GLOBAL_REGISTER_CONTROLS                                              ; ON                 ;      ;    ;
+; AUTO_IMPLEMENT_IN_ROM                                                          ; OFF                ;      ;    ;
+; APEX20K_TECHNOLOGY_MAPPER                                                      ; LUT                ;      ;    ;
+; OPTIMIZATION_TECHNIQUE                                                         ; BALANCED           ;      ;    ;
+; STRATIXII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
+; CYCLONE_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
+; CYCLONEII_OPTIMIZATION_TECHNIQUE                                               ; BALANCED           ;      ;    ;
+; STRATIX_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
+; MAXII_OPTIMIZATION_TECHNIQUE                                                   ; BALANCED           ;      ;    ;
+; MAX7000_OPTIMIZATION_TECHNIQUE                                                 ; SPEED              ;      ;    ;
+; APEX20K_OPTIMIZATION_TECHNIQUE                                                 ; BALANCED           ;      ;    ;
+; MERCURY_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
+; FLEX6K_OPTIMIZATION_TECHNIQUE                                                  ; AREA               ;      ;    ;
+; FLEX10K_OPTIMIZATION_TECHNIQUE                                                 ; AREA               ;      ;    ;
+; ALLOW_XOR_GATE_USAGE                                                           ; ON                 ;      ;    ;
+; AUTO_LCELL_INSERTION                                                           ; ON                 ;      ;    ;
+; CARRY_CHAIN_LENGTH                                                             ; 48                 ;      ;    ;
+; FLEX6K_CARRY_CHAIN_LENGTH                                                      ; 32                 ;      ;    ;
+; FLEX10K_CARRY_CHAIN_LENGTH                                                     ; 32                 ;      ;    ;
+; MERCURY_CARRY_CHAIN_LENGTH                                                     ; 48                 ;      ;    ;
+; STRATIX_CARRY_CHAIN_LENGTH                                                     ; 70                 ;      ;    ;
+; STRATIXII_CARRY_CHAIN_LENGTH                                                   ; 70                 ;      ;    ;
+; CASCADE_CHAIN_LENGTH                                                           ; 2                  ;      ;    ;
+; PARALLEL_EXPANDER_CHAIN_LENGTH                                                 ; 16                 ;      ;    ;
+; MAX7000_PARALLEL_EXPANDER_CHAIN_LENGTH                                         ; 4                  ;      ;    ;
+; AUTO_CARRY_CHAINS                                                              ; ON                 ;      ;    ;
+; AUTO_CASCADE_CHAINS                                                            ; ON                 ;      ;    ;
+; AUTO_PARALLEL_EXPANDERS                                                        ; ON                 ;      ;    ;
+; AUTO_OPEN_DRAIN_PINS                                                           ; ON                 ;      ;    ;
+; AUTO_ROM_RECOGNITION                                                           ; OFF                ;      ;    ;
+; AUTO_RAM_RECOGNITION                                                           ; OFF                ;      ;    ;
+; AUTO_DSP_RECOGNITION                                                           ; ON                 ;      ;    ;
+; AUTO_SHIFT_REGISTER_RECOGNITION                                                ; AUTO               ;      ;    ;
+; ALLOW_SHIFT_REGISTER_MERGING_ACROSS_HIERARCHIES                                ; AUTO               ;      ;    ;
+; AUTO_CLOCK_ENABLE_RECOGNITION                                                  ; OFF                ;      ;    ;
+; STRICT_RAM_RECOGNITION                                                         ; OFF                ;      ;    ;
+; ALLOW_SYNCH_CTRL_USAGE                                                         ; ON                 ;      ;    ;
+; FORCE_SYNCH_CLEAR                                                              ; OFF                ;      ;    ;
+; AUTO_RAM_TO_LCELL_CONVERSION                                                   ; OFF                ;      ;    ;
+; AUTO_RESOURCE_SHARING                                                          ; OFF                ;      ;    ;
+; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
+; ALLOW_ANY_ROM_SIZE_FOR_RECOGNITION                                             ; OFF                ;      ;    ;
+; ALLOW_ANY_SHIFT_REGISTER_SIZE_FOR_RECOGNITION                                  ; OFF                ;      ;    ;
+; MAX7000_FANIN_PER_CELL                                                         ; 100                ;      ;    ;
+; SYNTH_TIMING_DRIVEN_SYNTHESIS                                                  ; ON                 ;      ;    ;
+; IGNORE_MAX_FANOUT_ASSIGNMENTS                                                  ; OFF                ;      ;    ;
+; USE_HIGH_SPEED_ADDER                                                           ; AUTO               ;      ;    ;
+; SYNTH_GATED_CLOCK_CONVERSION                                                   ; OFF                ;      ;    ;
+; BLOCK_DESIGN_NAMING                                                            ; AUTO               ;      ;    ;
+; SHIFT_REGISTER_RECOGNITION_ACLR_SIGNAL                                         ; ON                 ;      ;    ;
+; PRPOF_ID                                                                       ; OFF                ;      ;    ;
+; DISABLE_DSP_NEGATE_INFERENCING                                                 ; OFF                ;      ;    ;
+; AUTO_MERGE_PLLS                                                                ; ON                 ;      ;    ;
+; IGNORE_MODE_FOR_MERGE                                                          ; OFF                ;      ;    ;
+; SLOW_SLEW_RATE                                                                 ; OFF                ;      ;    ;
+; PCI_IO                                                                         ; OFF                ;      ;    ;
+; TURBO_BIT                                                                      ; ON                 ;      ;    ;
+; WEAK_PULL_UP_RESISTOR                                                          ; OFF                ;      ;    ;
+; ENABLE_BUS_HOLD_CIRCUITRY                                                      ; OFF                ;      ;    ;
+; AUTO_GLOBAL_MEMORY_CONTROLS                                                    ; OFF                ;      ;    ;
+; QII_AUTO_PACKED_REGISTERS                                                      ; AUTO               ;      ;    ;
+; AUTO_PACKED_REGISTERS_MAX                                                      ; AUTO               ;      ;    ;
+; NORMAL_LCELL_INSERT                                                            ; ON                 ;      ;    ;
+; CARRY_OUT_PINS_LCELL_INSERT                                                    ; ON                 ;      ;    ;
+; XSTL_INPUT_ALLOW_SE_BUFFER                                                     ; OFF                ;      ;    ;
+; TREAT_BIDIR_AS_OUTPUT                                                          ; OFF                ;      ;    ;
+; AUTO_TURBO_BIT                                                                 ; ON                 ;      ;    ;
+; AUTO_GLOBAL_CLOCK                                                              ; ON                 ;      ;    ;
+; AUTO_GLOBAL_OE                                                                 ; ON                 ;      ;    ;
+; AUTO_GLOBAL_REGISTER_CONTROLS                                                  ; ON                 ;      ;    ;
+; SYNCHRONIZER_IDENTIFICATION                                                    ; AUTO               ;      ;    ;
+; M144K_BLOCK_READ_CLOCK_DUTY_CYCLE_DEPENDENCY                                   ; OFF                ;      ;    ;
+; CLAMPING_DIODE                                                                 ; OFF                ;      ;    ;
+; IMPLEMENT_MLAB_IN_16_BIT_DEEP_MODE                                             ; OFF                ;      ;    ;
++--------------------------------------------------------------------------------+--------------------+------+----+
 
 
 +-----------------------------------------------------------------------------------------------------------------+
@@ -2884,6 +3016,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux8:note_selector ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; n              ; 16    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelA ;
 +----------------+-------+------------------------------------------------------+
@@ -3269,6 +3411,97 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+-------------------------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:gen_clk_note"                                                                                                                     ;
++---------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                                                                                   ;
++---------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; outclk_Not    ; Output ; Info     ; Explicitly unconnected                                                                                                                                    ;
+; div_clk_count ; Input  ; Warning  ; Input port expression (16 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "div_clk_count[31..16]" will be connected to GND. ;
+; Reset         ; Input  ; Info     ; Stuck at VCC                                                                                                                                              ;
++---------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "mux8:note_selector" ;
++-------------+-------+----------+---------------+
+; Port        ; Type  ; Severity ; Details       ;
++-------------+-------+----------+---------------+
+; in1[13..11] ; Input ; Info     ; Stuck at VCC  ;
+; in1[5..3]   ; Input ; Info     ; Stuck at VCC  ;
+; in1[2..1]   ; Input ; Info     ; Stuck at GND  ;
+; in1[15]     ; Input ; Info     ; Stuck at VCC  ;
+; in1[14]     ; Input ; Info     ; Stuck at GND  ;
+; in1[10]     ; Input ; Info     ; Stuck at GND  ;
+; in1[9]      ; Input ; Info     ; Stuck at VCC  ;
+; in1[8]      ; Input ; Info     ; Stuck at GND  ;
+; in1[7]      ; Input ; Info     ; Stuck at VCC  ;
+; in1[6]      ; Input ; Info     ; Stuck at GND  ;
+; in1[0]      ; Input ; Info     ; Stuck at VCC  ;
+; in2[10..9]  ; Input ; Info     ; Stuck at VCC  ;
+; in2[4..2]   ; Input ; Info     ; Stuck at VCC  ;
+; in2[12..11] ; Input ; Info     ; Stuck at GND  ;
+; in2[8..7]   ; Input ; Info     ; Stuck at GND  ;
+; in2[15]     ; Input ; Info     ; Stuck at VCC  ;
+; in2[14]     ; Input ; Info     ; Stuck at GND  ;
+; in2[13]     ; Input ; Info     ; Stuck at VCC  ;
+; in2[6]      ; Input ; Info     ; Stuck at VCC  ;
+; in2[5]      ; Input ; Info     ; Stuck at GND  ;
+; in2[1]      ; Input ; Info     ; Stuck at GND  ;
+; in2[0]      ; Input ; Info     ; Stuck at VCC  ;
+; in3[5..4]   ; Input ; Info     ; Stuck at VCC  ;
+; in3[14..13] ; Input ; Info     ; Stuck at GND  ;
+; in3[9..6]   ; Input ; Info     ; Stuck at GND  ;
+; in3[3..0]   ; Input ; Info     ; Stuck at GND  ;
+; in3[15]     ; Input ; Info     ; Stuck at VCC  ;
+; in3[12]     ; Input ; Info     ; Stuck at VCC  ;
+; in3[11]     ; Input ; Info     ; Stuck at GND  ;
+; in3[10]     ; Input ; Info     ; Stuck at VCC  ;
+; in4[9..5]   ; Input ; Info     ; Stuck at VCC  ;
+; in4[14..12] ; Input ; Info     ; Stuck at GND  ;
+; in4[2..0]   ; Input ; Info     ; Stuck at GND  ;
+; in4[15]     ; Input ; Info     ; Stuck at VCC  ;
+; in4[11]     ; Input ; Info     ; Stuck at VCC  ;
+; in4[10]     ; Input ; Info     ; Stuck at GND  ;
+; in4[4]      ; Input ; Info     ; Stuck at GND  ;
+; in4[3]      ; Input ; Info     ; Stuck at VCC  ;
+; in5[14..10] ; Input ; Info     ; Stuck at VCC  ;
+; in5[5..3]   ; Input ; Info     ; Stuck at VCC  ;
+; in5[9..8]   ; Input ; Info     ; Stuck at GND  ;
+; in5[2..0]   ; Input ; Info     ; Stuck at GND  ;
+; in5[15]     ; Input ; Info     ; Stuck at GND  ;
+; in5[7]      ; Input ; Info     ; Stuck at VCC  ;
+; in5[6]      ; Input ; Info     ; Stuck at GND  ;
+; in6[14..13] ; Input ; Info     ; Stuck at VCC  ;
+; in6[11..9]  ; Input ; Info     ; Stuck at VCC  ;
+; in6[7..3]   ; Input ; Info     ; Stuck at VCC  ;
+; in6[2..1]   ; Input ; Info     ; Stuck at GND  ;
+; in6[15]     ; Input ; Info     ; Stuck at GND  ;
+; in6[12]     ; Input ; Info     ; Stuck at GND  ;
+; in6[8]      ; Input ; Info     ; Stuck at GND  ;
+; in6[0]      ; Input ; Info     ; Stuck at VCC  ;
+; in7[14..13] ; Input ; Info     ; Stuck at VCC  ;
+; in7[7..4]   ; Input ; Info     ; Stuck at VCC  ;
+; in7[12..10] ; Input ; Info     ; Stuck at GND  ;
+; in7[3..1]   ; Input ; Info     ; Stuck at GND  ;
+; in7[15]     ; Input ; Info     ; Stuck at GND  ;
+; in7[9]      ; Input ; Info     ; Stuck at VCC  ;
+; in7[8]      ; Input ; Info     ; Stuck at GND  ;
+; in7[0]      ; Input ; Info     ; Stuck at VCC  ;
+; in8[12..10] ; Input ; Info     ; Stuck at VCC  ;
+; in8[4..2]   ; Input ; Info     ; Stuck at VCC  ;
+; in8[1..0]   ; Input ; Info     ; Stuck at GND  ;
+; in8[15]     ; Input ; Info     ; Stuck at GND  ;
+; in8[14]     ; Input ; Info     ; Stuck at VCC  ;
+; in8[13]     ; Input ; Info     ; Stuck at GND  ;
+; in8[9]      ; Input ; Info     ; Stuck at GND  ;
+; in8[8]      ; Input ; Info     ; Stuck at VCC  ;
+; in8[7]      ; Input ; Info     ; Stuck at GND  ;
+; in8[6]      ; Input ; Info     ; Stuck at VCC  ;
+; in8[5]      ; Input ; Info     ; Stuck at GND  ;
++-------------+-------+----------+---------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; SignalTap II Logic Analyzer Settings                                                                                                                                                                                                                                    ;
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
@@ -3288,18 +3521,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD                                                                       ; 32    ;
 ;     plain                                                                     ; 44    ;
 ; arriav_io_obuf                                                                ; 60    ;
-; arriav_lcell_comb                                                             ; 49    ;
+; arriav_lcell_comb                                                             ; 63    ;
 ;     arith                                                                     ; 32    ;
 ;         1 data inputs                                                         ; 32    ;
-;     normal                                                                    ; 17    ;
+;     normal                                                                    ; 31    ;
 ;         0 data inputs                                                         ; 2     ;
-;         1 data inputs                                                         ; 8     ;
-;         2 data inputs                                                         ; 1     ;
-;         3 data inputs                                                         ; 1     ;
+;         1 data inputs                                                         ; 10    ;
+;         2 data inputs                                                         ; 3     ;
+;         3 data inputs                                                         ; 11    ;
 ;         4 data inputs                                                         ; 1     ;
 ;         5 data inputs                                                         ; 2     ;
 ;         6 data inputs                                                         ; 2     ;
-; blackbox                                                                      ; 16    ;
+; blackbox                                                                      ; 17    ;
+;         ar_clk_div32:Div_Clk                                                  ; 1     ;
 ;         ar_clk_div32:Div_Clk                                                  ; 1     ;
 ;         ar_clk_div32:Div_Clk                                                  ; 1     ;
 ;         ar_clk_div32:Div_Clk                                                  ; 1     ;
@@ -3319,7 +3553,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port                                                                 ; 438   ;
 ;                                                                               ;       ;
 ; Max LUT depth                                                                 ; 2.50  ;
-; Average LUT depth                                                             ; 0.66  ;
+; Average LUT depth                                                             ; 0.69  ;
 +-------------------------------------------------------------------------------+-------+
 
 
@@ -3943,8 +4177,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|scope_channelB[8]  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scope_capture:LCD_scope_channelB|captured_data[8]                                    ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|scope_channelB[9]  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scope_capture:LCD_scope_channelB|captured_data[9]                                    ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|scope_channelB[9]  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scope_capture:LCD_scope_channelB|captured_data[9]                                    ; N/A     ;
-; ScopeChannelASignal                                                       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg           ; N/A     ;
-; ScopeChannelASignal                                                       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_reg           ; N/A     ;
+; ScopeChannelASignal                                                       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Generate_Arbitrary_Divided_Clk32:gen_clk_note|var_clk_div32:Div_Clk|tc_reg           ; N/A     ;
+; ScopeChannelASignal                                                       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Generate_Arbitrary_Divided_Clk32:gen_clk_note|var_clk_div32:Div_Clk|tc_reg           ; N/A     ;
 ; ScopeChannelBSignal                                                       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                                                                ; N/A     ;
 ; ScopeChannelBSignal                                                       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                                                                ; N/A     ;
 ; scope_clk                                                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ; N/A     ;
@@ -3989,7 +4223,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Sat Jan 19 17:10:13 2019
+    Info: Processing started: Sat Jan 19 18:47:46 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Basic_Organ_Solution -c Basic_Organ_Solution
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12019): Can't analyze file -- file ../scribble/clock_divider.sv is missing
@@ -4012,23 +4246,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file basic_o
     Info (12023): Found entity 1: Basic_Organ_Solution
 Info (12127): Elaborating entity "Basic_Organ_Solution" for the top level hierarchy
 Warning (10858): Verilog HDL warning at Basic_Organ_Solution.v(88): object LED used but never assigned
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(380): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(438): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(453): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(454): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(455): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(456): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(457): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(458): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(413): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(471): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(486): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(487): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(488): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(489): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(490): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(491): truncated value with size 8 to match size of target (7)
 Warning (10030): Net "LED" at Basic_Organ_Solution.v(88) has no driver or initial value, using a default initial value '0'
 Warning (10034): Output port "LEDR[9..8]" at Basic_Organ_Solution.v(50) has no driver
+Warning (12125): Using design file mux8.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mux8
+Info (12128): Elaborating entity "mux8" for hierarchy "mux8:note_selector"
+Warning (12125): Using design file generate_arbitrary_divided_clk32.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Generate_Arbitrary_Divided_Clk32
+Info (12128): Elaborating entity "Generate_Arbitrary_Divided_Clk32" for hierarchy "Generate_Arbitrary_Divided_Clk32:gen_clk_note"
+Info (12128): Elaborating entity "var_clk_div32" for hierarchy "Generate_Arbitrary_Divided_Clk32:gen_clk_note|var_clk_div32:Div_Clk"
 Warning (12125): Using design file doublesync.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: doublesync
 Info (12128): Elaborating entity "doublesync" for hierarchy "doublesync:user_scope_enable_sync1"
-Warning (12125): Using design file generate_arbitrary_divided_clk32.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Generate_Arbitrary_Divided_Clk32
-Info (12128): Elaborating entity "Generate_Arbitrary_Divided_Clk32" for hierarchy "Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk"
-Info (12128): Elaborating entity "var_clk_div32" for hierarchy "Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk"
 Warning (12125): Using design file scope_capture.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: scope_capture
 Info (12128): Elaborating entity "scope_capture" for hierarchy "scope_capture:LCD_scope_channelA"
@@ -4083,7 +4320,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file db/ip/s
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld59a4f0a5/submodules/alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_splitter
 Warning (12240): Synthesis found one or more imported partitions that will be treated as black boxes for timing analysis during synthesis
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "GPIO_0[13]" has no driver
     Warning (13040): Bidir "GPIO_0[14]" has no driver
@@ -4184,7 +4421,7 @@ Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 613 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (35003): Optimize away 49 nodes that do not fanout to OUTPUT or BIDIR pins
+Info (35003): Optimize away 52 nodes that do not fanout to OUTPUT or BIDIR pins
     Info (35004): Node: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0|ssOut[6]"
     Info (35004): Node: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1|ssOut[6]"
     Info (35004): Node: "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2|ssOut[6]"
@@ -4223,32 +4460,32 @@ Info (35003): Optimize away 49 nodes that do not fanout to OUTPUT or BIDIR pins
     Info (35004): Node: "to_slow_clk_interface:interface_actual_audio_data_right|outdata[13]"
     Info (35004): Node: "to_slow_clk_interface:interface_actual_audio_data_right|outdata[14]"
     Info (35004): Node: "to_slow_clk_interface:interface_actual_audio_data_right|outdata[15]"
+    Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:gen_clk_note|var_clk_div32:Div_Clk|tc_not_reg"
+    Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:gen_clk_note|var_clk_div32:Div_Clk|outclk_not"
     Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_not_reg"
     Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|outclk_not"
     Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|tc_not_reg"
     Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk|outclk_not"
     Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|tc_not_reg"
     Info (35004): Node: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|var_clk_div32:Div_Clk|outclk_not"
-Warning (21074): Design contains 9 input pin(s) that do not drive logic
+Warning (21074): Design contains 7 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[3]"
     Warning (15610): No output dependent on input pin "SW[0]"
-    Warning (15610): No output dependent on input pin "SW[2]"
-    Warning (15610): No output dependent on input pin "SW[3]"
     Warning (15610): No output dependent on input pin "SW[4]"
     Warning (15610): No output dependent on input pin "SW[5]"
     Warning (15610): No output dependent on input pin "SW[6]"
     Warning (15610): No output dependent on input pin "SW[7]"
     Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-Info (21057): Implemented 6893 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6960 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 56 output pins
     Info (21060): Implemented 76 bidirectional pins
-    Info (21061): Implemented 6433 logic cells
+    Info (21061): Implemented 6500 logic cells
     Info (21064): Implemented 308 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 120 warnings
-    Info: Peak virtual memory: 4975 megabytes
-    Info: Processing ended: Sat Jan 19 17:10:50 2019
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:59
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 119 warnings
+    Info: Peak virtual memory: 4987 megabytes
+    Info: Processing ended: Sat Jan 19 18:48:30 2019
+    Info: Elapsed time: 00:00:44
+    Info: Total CPU time (on all processors): 00:01:10
 
 

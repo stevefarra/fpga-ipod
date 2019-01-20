@@ -1,6 +1,6 @@
 module mux8
    #(parameter n=16)
-    (input  logic [n-1:0] in1, in2, in3, in4, in5, in6, in7, in8
+    (input  logic [n-1:0] in1, in2, in3, in4, in5, in6, in7, in8,
      input  logic [2:0] sel,
      output logic [n-1:0] out);
 

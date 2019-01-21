@@ -241,24 +241,38 @@ wire [7:0] audio_data = {(~Sample_Clk_Signal),{7{Sample_Clk_Signal}}}; //generat
 
 //-------------------------------------------------------------------------------------
 
-wire [24:0] switch_characters;
+wire [2:0]  switch_bits;
+wire [24:0] note_characters;
 wire [32:0] freq_characters;
 
-mux8 #(24)
-ScopeInfoA_selector
-    (.in1 ({character_0,character_0,character_0}),
-     .in2 ({character_0,character_0,character_1}),
-     .in3 ({character_0,character_1,character_0}),
-     .in4 ({character_0,character_1,character_1}),
-     .in5 ({character_1,character_0,character_0}),
-     .in6 ({character_1,character_0,character_1}),
-     .in7 ({character_1,character_1,character_0}),
-     .in8 ({character_1,character_1,character_1}),
+mux8 #(3)
+LCD_Line2_selector
+    (.in1 (3'b000),
+     .in2 (3'b001),
+     .in3 (3'b010),
+     .in4 (3'b011),
+     .in5 (3'b100),
+     .in6 (3'b101),
+     .in7 (3'b110),
+     .in8 (3'b111),
      .sel (SW[3:1]),
-     .out (switch_characters));
+     .out (switch_bits));
+
+mux8 #(24)
+Scope_Info_ChannelA_selector
+    (.in1 ({character_D,character_lowercase_o,character_space}),
+     .in2 ({character_R,character_lowercase_e,character_space}),
+     .in3 ({character_M,character_lowercase_i,character_space}),
+     .in4 ({character_F,character_lowercase_a,character_space}),
+     .in5 ({character_S,character_lowercase_o,character_space}),
+     .in6 ({character_L,character_lowercase_a,character_space}),
+     .in7 ({character_T,character_lowercase_i,character_space}),
+     .in8 ({character_D,character_lowercase_o,character_2}),
+     .sel (SW[3:1]),
+     .out (note_characters));
 
 mux8 #(32)
-ScopeInfoB_selector
+Scope_Info_ChannelB_selector
     (.in1 ({character_lowercase_b,character_lowercase_a,character_lowercase_b,character_9}),
      .in2 ({character_lowercase_a,character_6,character_5,character_lowercase_d}),
      .in3 ({character_9,character_4,character_3,character_0}),
@@ -270,6 +284,11 @@ ScopeInfoB_selector
      .sel (SW[3:1]),
      .out (freq_characters));
 
+//-------------------------------------------------------------------------------------
+
+assign LED[0] = 1'b1;
+assign LED[2] = 1'b1;
+ 
 //=====================================================================================
 //
 // LCD Scope Acquisition Circuitry Wire Definitions                 
@@ -334,14 +353,14 @@ LCD_Scope_Encapsulated_pacoblaze_wrapper LCD_LED_scope(
                     .clk(CLK_50M),    //don't touch
                           
                     //LCD Display values
-                    .InH(8'hDE),
-                    .InG(8'hAD),
-                    .InF(8'hBE),
-                    .InE(8'hEF),
-                    .InD(8'hCA),
-                    .InC(8'hFE),
-                    .InB(8'hBA),
-                    .InA(8'hBE),
+                    .InH({5'b0,switch_bits[2:0]}),
+                    .InG(8'h00),
+                    .InF(8'h00),
+                    .InE(8'h00),
+                    .InD(8'h00),
+                    .InC(8'h00),
+                    .InB(half_num_clk_cycles[15:8]),
+                    .InA(half_num_clk_cycles[7:0]),
                           
                     //LCD display information signals
                     .InfoH({character_C,character_lowercase_o}),
@@ -361,7 +380,7 @@ LCD_Scope_Encapsulated_pacoblaze_wrapper LCD_LED_scope(
                     .scope_channelB(scope_channelB), //don't touch
                           
                     //scope information generation
-                    .ScopeInfoA({switch_characters,character_space}),
+                    .ScopeInfoA({note_characters,character_space}),
                     .ScopeInfoB(freq_characters),
                           
                     //enable_scope is used to freeze the scope just before capturing 

@@ -1,10 +1,10 @@
+`timescale 1ns/1ns
+
 module clk_divider_tb();
     logic        sim_rst;
     logic [15:0] sim_half_num_clk_cycles;
     logic        sim_clk_in;
     logic        sim_clk_out;
-
-    logic [15:0] clk_cycles_completed;
 
     clk_divider
     dut
@@ -12,12 +12,6 @@ module clk_divider_tb();
          .half_num_clk_cycles (sim_half_num_clk_cycles),
          .clk_in              (sim_clk_in),
          .clk_out             (sim_clk_out));
-
-    counter #(16)
-    clk_counter
-        (.clk   (sim_clk_out),
-         .rst   (sim_rst),
-         .count (clk_cycles_completed));
 
     // 50 MHz clock has a period of 20 ns
     always
@@ -28,12 +22,15 @@ module clk_divider_tb();
     
     initial
         begin
-            sim_rst; = 1'b1; #20;
-            sim_rst; = 1'b0;
-
+            sim_rst = 1'b1; #20;
+            sim_rst = 1'b0;
             // Do: 523 Hz
             sim_half_num_clk_cycles[15:0] = (50000000/523)/2;
-            #1000000;
-           $stop; 
+            // Wait 3 clock cycles
+            // Period is ~1.912 ms,
+            // So 3 * 1.912 * 10^6 ~= 5736157 ns
+            #5736157;
+            sim_half_num_clk_cycles[15:0] = (50000000/600)/2;
+            $stop;
         end
 endmodule

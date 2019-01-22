@@ -1,5 +1,5 @@
 Flow report for Basic_Organ_Solution
-Tue Jan 22 04:36:16 2019
+Tue Jan 22 05:28:01 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Tue Jan 22 04:35:19 2019      ;
+; Flow Status                     ; Successful - Tue Jan 22 05:27:05 2019      ;
 ; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                   ; Basic_Organ_Solution                       ;
 ; Top-level Entity Name           ; Basic_Organ_Solution                       ;
 ; Family                          ; Cyclone V                                  ;
 ; Device                          ; 5CSEMA5F31C6                               ;
 ; Timing Models                   ; Final                                      ;
-; Logic utilization (in ALMs)     ; 2,765 / 32,070 ( 9 % )                     ;
-; Total registers                 ; 5580                                       ;
+; Logic utilization (in ALMs)     ; 2,816 / 32,070 ( 9 % )                     ;
+; Total registers                 ; 5623                                       ;
 ; Total pins                      ; 147 / 457 ( 32 % )                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 55,552 / 4,065,280 ( 1 % )                 ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 01/22/2019 04:30:51  ;
+; Start date & time ; 01/22/2019 05:22:48  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; Basic_Organ_Solution ;
 +-------------------+----------------------+
@@ -84,7 +84,7 @@ agreement for further details.
 ; AUTO_RAM_RECOGNITION                              ; Off                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ; On                 ; --          ; --               ;
 ; AUTO_ROM_RECOGNITION                              ; Off                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ; On                 ; --          ; --               ;
 ; BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS ; Care                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ; Auto               ; --          ; --               ;
-; COMPILER_SIGNATURE_ID                             ; 228800457757286.154816025111772                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ; --                 ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                             ; 228800457757286.154816336809312                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ; --                 ; --          ; --               ;
 ; DRC_DETAIL_MESSAGE_LIMIT                          ; 3000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ; 10                 ; --          ; --               ;
 ; DRC_VIOLATION_MESSAGE_LIMIT                       ; 3000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ; 30                 ; --          ; --               ;
 ; ENABLE_IP_DEBUG                                   ; On                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ; Off                ; --          ; --               ;
@@ -152,12 +152,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:34     ; 1.0                     ; 4983 MB             ; 00:00:57                           ;
-; I/O Assignment Analysis   ; 00:00:22     ; 1.0                     ; 5526 MB             ; 00:00:22                           ;
-; Fitter                    ; 00:03:03     ; 1.5                     ; 6899 MB             ; 00:04:33                           ;
-; Assembler                 ; 00:00:15     ; 1.0                     ; 4911 MB             ; 00:00:15                           ;
-; TimeQuest Timing Analyzer ; 00:00:55     ; 1.0                     ; 5134 MB             ; 00:00:54                           ;
-; Total                     ; 00:05:09     ; --                      ; --                  ; 00:07:01                           ;
+; Analysis & Synthesis      ; 00:00:34     ; 1.0                     ; 4988 MB             ; 00:00:57                           ;
+; I/O Assignment Analysis   ; 00:00:23     ; 1.0                     ; 5523 MB             ; 00:00:23                           ;
+; Fitter                    ; 00:02:51     ; 1.6                     ; 6898 MB             ; 00:04:22                           ;
+; Assembler                 ; 00:00:14     ; 1.0                     ; 4905 MB             ; 00:00:14                           ;
+; TimeQuest Timing Analyzer ; 00:00:52     ; 1.1                     ; 5132 MB             ; 00:00:53                           ;
+; Total                     ; 00:04:54     ; --                      ; --                  ; 00:06:49                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

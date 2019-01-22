@@ -286,18 +286,31 @@ Scope_Info_ChannelB_selector
 
 //-------------------------------------------------------------------------------------
 
-wire clk_led;
+wire clk_led_1;
+wire clk_led_2;
 
+/* Clk divider registers are not wide
+   enough to generate a 1 Hz clock,
+   so use 2 clk dividers to do it */
 clk_divider
-gen_clk_led
-    (.rst                 (~SW[0]),
-     .half_num_clk_cycles (50000000/2),
+gen_clk_led_1
+    (.rst                 (1'b0),
+     .half_num_clk_cycles (50000),
      .clk_in              (CLK_50M),
-     .clk_out             (clk_led));
+     .clk_out             (clk_led_1));
+
+/* clk_led_1 is now a 500 Hz clock
+   which we use in the second module */
+clk_divider
+gen_clk_led_2
+    (.rst                 (1'b0),
+     .half_num_clk_cycles (250),
+     .clk_in              (clk_led_1),
+     .clk_out             (clk_led_2));
 
 bit_bouncer8 
 led_bouncer
-    (.clk  (Clock_1Hz),
+    (.clk  (clk_led_2),
      .bits (LED[7:0]));
  
 //=====================================================================================

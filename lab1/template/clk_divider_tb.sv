@@ -5,8 +5,6 @@
 `define MI_FREQ  659
 `define FA_FREQ  698
 `define SO_FREQ  783
-`define TI_FREQ  987
-`define DO2_FREQ 1046
 
 module clk_divider_tb();
     logic        sim_rst;

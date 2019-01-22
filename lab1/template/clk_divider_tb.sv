@@ -1,5 +1,11 @@
 `timescale 1ns/1ns
 
+`define SYS_CLK_FREQ 50000000
+`define DO_FREQ 523
+`define MI_FREQ 659
+`define FA_FREQ 698
+`define SO_FREQ 783
+
 module clk_divider_tb();
     logic        sim_rst;
     logic [15:0] sim_half_num_clk_cycles;
@@ -24,13 +30,13 @@ module clk_divider_tb();
         begin
             sim_rst = 1'b1; #20;
             sim_rst = 1'b0;
-            // Do: 523 Hz
-            sim_half_num_clk_cycles[15:0] = (50000000/523)/2;
+
+            // Do
+            sim_half_num_clk_cycles[15:0] = (`SYS_CLK_FREQ/`DO_FREQ)/2;
             // Wait 3 clock cycles
             // Period is ~1.912 ms,
             // So 3 * 1.912 * 10^6 ~= 5736157 ns
             #5736157;
-            sim_half_num_clk_cycles[15:0] = (50000000/600)/2;
             $stop;
         end
 endmodule

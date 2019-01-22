@@ -27,34 +27,41 @@ module mux8_tb();
 
     initial begin
         sim_sel = 3'b000;
+        #1;
         assert (sim_out[15:0] === doe)
-        else   $error(""Doe" select failed."); 
+        else $error("Doe select failed."); 
+        sim_sel = 3'b100;
         #1;
-        sim_sel = 3'b101;
         assert (sim_out[15:0] === so)
-        else   $error(""So" select failed."); 
-        #1;
+        else   $error("So select failed."); 
         sim_sel = 3'b101;
+        #1;
         assert (sim_out[15:0] === la)
-        else   $error(""La" select failed."); 
-        #1;
+        else   $error("La select failed."); 
         sim_sel = 3'b011;
+        #1;
         assert (sim_out[15:0] === fa)
-        else   $error(""Fa" select failed."); 
-        #1;
+        else   $error("Fa select failed."); 
         sim_sel = 3'b111;
+        #1;
         assert (sim_out[15:0] === doe2)
-        else   $error(""Doe2" select failed."); 
-        #1;
+        else   $error("Doe2 select failed."); 
         sim_sel = 3'b001;
+        #1;
         assert (sim_out[15:0] === re)
-        else   $error(""Re" select failed."); 
+        else   $error("Re select failed."); 
+        sim_sel = 3'b010; 
         #1;
-        sim_sel = 3'b010 
         assert (sim_out[15:0] === mi)
-        else   $error(""Mi" select failed."); 
+        else   $error("Mi select failed."); 
+        sim_sel = 3'b110;
         #1;
-        assert (sim_sel = 3'b110 === ti)
-        else   $error(""Ti" select failed."); 
+        assert (sim_out[15:0] === ti)
+        else   $error("Ti select failed.");
+        sim_sel = 3'b000;
+        #1;
+        assert (sim_out[15:0] === doe)
+        else   $error("Doe select failed."); 
+        $stop;
         end
 endmodule

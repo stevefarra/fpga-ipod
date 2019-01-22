@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Basic_Organ_Solution
-Mon Jan 21 09:59:56 2019
-Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Full Version
+Tue Jan 22 04:31:26 2019
+Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
 ---------------------
@@ -44,33 +44,36 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Full Version
  36. Parameter Settings for User Entity Instance: mux8:LCD_Line2_selector
  37. Parameter Settings for User Entity Instance: mux8:Scope_Info_ChannelA_selector
  38. Parameter Settings for User Entity Instance: mux8:Scope_Info_ChannelB_selector
- 39. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelA
- 40. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelB
- 41. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
- 42. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_right
- 43. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_left
- 44. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 45. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk"
- 46. Port Connectivity Checks: "doublesync:key2_doublsync"
- 47. Port Connectivity Checks: "doublesync:key1_doublsync"
- 48. Port Connectivity Checks: "doublesync:key0_doublsync"
- 49. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk"
- 50. Port Connectivity Checks: "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope"
- 51. Port Connectivity Checks: "scope_capture:LCD_scope_channelB"
- 52. Port Connectivity Checks: "scope_capture:LCD_scope_channelA|doublesync:sync_enable"
- 53. Port Connectivity Checks: "scope_capture:LCD_scope_channelA"
- 54. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk"
- 55. Port Connectivity Checks: "doublesync:user_scope_enable_sync1"
- 56. Port Connectivity Checks: "mux8:Scope_Info_ChannelB_selector"
- 57. Port Connectivity Checks: "mux8:Scope_Info_ChannelA_selector"
- 58. Port Connectivity Checks: "mux8:LCD_Line2_selector"
- 59. Port Connectivity Checks: "mux8:note_selector"
- 60. SignalTap II Logic Analyzer Settings
- 61. Post-Synthesis Netlist Statistics for Top Partition
- 62. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 63. Elapsed Time Per Partition
- 64. Connections to In-System Debugging Instance "auto_signaltap_0"
- 65. Analysis & Synthesis Messages
+ 39. Parameter Settings for User Entity Instance: clk_divider:gen_clk_led|counter:clk_counter
+ 40. Parameter Settings for User Entity Instance: clk_divider:gen_clk_led|geq_comparator:clk_comparator
+ 41. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelA
+ 42. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelB
+ 43. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
+ 44. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_right
+ 45. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_left
+ 46. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 47. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk"
+ 48. Port Connectivity Checks: "doublesync:key2_doublsync"
+ 49. Port Connectivity Checks: "doublesync:key1_doublsync"
+ 50. Port Connectivity Checks: "doublesync:key0_doublsync"
+ 51. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk"
+ 52. Port Connectivity Checks: "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope"
+ 53. Port Connectivity Checks: "scope_capture:LCD_scope_channelB"
+ 54. Port Connectivity Checks: "scope_capture:LCD_scope_channelA|doublesync:sync_enable"
+ 55. Port Connectivity Checks: "scope_capture:LCD_scope_channelA"
+ 56. Port Connectivity Checks: "Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk"
+ 57. Port Connectivity Checks: "doublesync:user_scope_enable_sync1"
+ 58. Port Connectivity Checks: "clk_divider:gen_clk_led"
+ 59. Port Connectivity Checks: "mux8:Scope_Info_ChannelB_selector"
+ 60. Port Connectivity Checks: "mux8:Scope_Info_ChannelA_selector"
+ 61. Port Connectivity Checks: "mux8:LCD_Line2_selector"
+ 62. Port Connectivity Checks: "mux8:note_selector"
+ 63. SignalTap II Logic Analyzer Settings
+ 64. Post-Synthesis Netlist Statistics for Top Partition
+ 65. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
+ 66. Elapsed Time Per Partition
+ 67. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 68. Analysis & Synthesis Messages
 
 
 
@@ -94,27 +97,27 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jan 21 09:59:56 2019       ;
-; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Full Version ;
-; Revision Name                   ; Basic_Organ_Solution                        ;
-; Top-level Entity Name           ; Basic_Organ_Solution                        ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 5279                                        ;
-; Total pins                      ; 147                                         ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 55,552                                      ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++---------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Jan 22 04:31:26 2019      ;
+; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
+; Revision Name                   ; Basic_Organ_Solution                       ;
+; Top-level Entity Name           ; Basic_Organ_Solution                       ;
+; Family                          ; Cyclone V                                  ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 5289                                       ;
+; Total pins                      ; 147                                        ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 55,552                                     ;
+; Total DSP Blocks                ; 0                                          ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -228,22 +231,23 @@ agreement for further details.
 +--------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                       ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                ; Library     ;
 +--------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------+-------------+
-; SevenSegmentDisplayDecoder.qxp                         ; yes             ; User File                                    ; C:/Users/w3k1b/cpen311/lab1/template/SevenSegmentDisplayDecoder.qxp                         ;             ;
-; speed_reg_control.qxp                                  ; yes             ; User File                                    ; C:/Users/w3k1b/cpen311/lab1/template/speed_reg_control.qxp                                  ;             ;
-; var_clk_div32.qxp                                      ; yes             ; User File                                    ; C:/Users/w3k1b/cpen311/lab1/template/var_clk_div32.qxp                                      ;             ;
-; to_slow_clk_interface.qxp                              ; yes             ; User File                                    ; C:/Users/w3k1b/cpen311/lab1/template/to_slow_clk_interface.qxp                              ;             ;
-; LCD_Scope_Encapsulated_pacoblaze.qxp                   ; yes             ; User File                                    ; C:/Users/w3k1b/cpen311/lab1/template/LCD_Scope_Encapsulated_pacoblaze.qxp                   ;             ;
-; audio_controller.qxp                                   ; yes             ; User File                                    ; C:/Users/w3k1b/cpen311/lab1/template/audio_controller.qxp                                   ;             ;
-; async_trap_and_reset_gen_1_pulse.qxp                   ; yes             ; User File                                    ; C:/Users/w3k1b/cpen311/lab1/template/async_trap_and_reset_gen_1_pulse.qxp                   ;             ;
-; Basic_Organ_Solution.v                                 ; yes             ; User Verilog HDL File                        ; C:/Users/w3k1b/cpen311/lab1/template/Basic_Organ_Solution.v                                 ;             ;
-; mux8.sv                                                ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/w3k1b/cpen311/lab1/template/mux8.sv                                                ;             ;
-; clk_divider.sv                                         ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/w3k1b/cpen311/lab1/template/clk_divider.sv                                         ;             ;
-; counter.sv                                             ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/w3k1b/cpen311/lab1/template/counter.sv                                             ;             ;
-; geq_comparator.sv                                      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/w3k1b/cpen311/lab1/template/geq_comparator.sv                                      ;             ;
-; doublesync.v                                           ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/w3k1b/cpen311/lab1/template/doublesync.v                                           ;             ;
-; generate_arbitrary_divided_clk32.v                     ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/w3k1b/cpen311/lab1/template/generate_arbitrary_divided_clk32.v                     ;             ;
-; scope_capture.v                                        ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/w3k1b/cpen311/lab1/template/scope_capture.v                                        ;             ;
-; lcd_scope_encapsulated_pacoblaze_wrapper.v             ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/w3k1b/cpen311/lab1/template/lcd_scope_encapsulated_pacoblaze_wrapper.v             ;             ;
+; SevenSegmentDisplayDecoder.qxp                         ; yes             ; User File                                    ; C:/Users/stfar/cpen311/lab1/template/SevenSegmentDisplayDecoder.qxp                         ;             ;
+; speed_reg_control.qxp                                  ; yes             ; User File                                    ; C:/Users/stfar/cpen311/lab1/template/speed_reg_control.qxp                                  ;             ;
+; var_clk_div32.qxp                                      ; yes             ; User File                                    ; C:/Users/stfar/cpen311/lab1/template/var_clk_div32.qxp                                      ;             ;
+; to_slow_clk_interface.qxp                              ; yes             ; User File                                    ; C:/Users/stfar/cpen311/lab1/template/to_slow_clk_interface.qxp                              ;             ;
+; LCD_Scope_Encapsulated_pacoblaze.qxp                   ; yes             ; User File                                    ; C:/Users/stfar/cpen311/lab1/template/LCD_Scope_Encapsulated_pacoblaze.qxp                   ;             ;
+; audio_controller.qxp                                   ; yes             ; User File                                    ; C:/Users/stfar/cpen311/lab1/template/audio_controller.qxp                                   ;             ;
+; async_trap_and_reset_gen_1_pulse.qxp                   ; yes             ; User File                                    ; C:/Users/stfar/cpen311/lab1/template/async_trap_and_reset_gen_1_pulse.qxp                   ;             ;
+; Basic_Organ_Solution.v                                 ; yes             ; User Verilog HDL File                        ; C:/Users/stfar/cpen311/lab1/template/Basic_Organ_Solution.v                                 ;             ;
+; mux8.sv                                                ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/stfar/cpen311/lab1/template/mux8.sv                                                ;             ;
+; clk_divider.sv                                         ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/stfar/cpen311/lab1/template/clk_divider.sv                                         ;             ;
+; counter.sv                                             ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/stfar/cpen311/lab1/template/counter.sv                                             ;             ;
+; geq_comparator.sv                                      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/stfar/cpen311/lab1/template/geq_comparator.sv                                      ;             ;
+; bit_bouncer8.sv                                        ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/stfar/cpen311/lab1/template/bit_bouncer8.sv                                        ;             ;
+; doublesync.v                                           ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/stfar/cpen311/lab1/template/doublesync.v                                           ;             ;
+; generate_arbitrary_divided_clk32.v                     ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/stfar/cpen311/lab1/template/generate_arbitrary_divided_clk32.v                     ;             ;
+; scope_capture.v                                        ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/stfar/cpen311/lab1/template/scope_capture.v                                        ;             ;
+; lcd_scope_encapsulated_pacoblaze_wrapper.v             ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/stfar/cpen311/lab1/template/lcd_scope_encapsulated_pacoblaze_wrapper.v             ;             ;
 ; sld_signaltap.vhd                                      ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/sld_signaltap.vhd                            ;             ;
 ; sld_signaltap_impl.vhd                                 ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                       ;             ;
 ; sld_ela_control.vhd                                    ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_ela_control.vhd                          ;             ;
@@ -262,7 +266,7 @@ agreement for further details.
 ; altrom.inc                                             ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altrom.inc                                   ;             ;
 ; altram.inc                                             ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altram.inc                                   ;             ;
 ; altdpram.inc                                           ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altdpram.inc                                 ;             ;
-; db/altsyncram_88e4.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/w3k1b/cpen311/lab1/template/db/altsyncram_88e4.tdf                                 ;             ;
+; db/altsyncram_88e4.tdf                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/stfar/cpen311/lab1/template/db/altsyncram_88e4.tdf                                 ;             ;
 ; altdpram.tdf                                           ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altdpram.tdf                                 ;             ;
 ; memmodes.inc                                           ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/others/maxplus2/memmodes.inc                               ;             ;
 ; a_hdffe.inc                                            ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/a_hdffe.inc                                  ;             ;
@@ -272,30 +276,30 @@ agreement for further details.
 ; muxlut.inc                                             ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/muxlut.inc                                   ;             ;
 ; bypassff.inc                                           ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/bypassff.inc                                 ;             ;
 ; altshift.inc                                           ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/altshift.inc                                 ;             ;
-; db/mux_elc.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Users/w3k1b/cpen311/lab1/template/db/mux_elc.tdf                                         ;             ;
+; db/mux_elc.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Users/stfar/cpen311/lab1/template/db/mux_elc.tdf                                         ;             ;
 ; lpm_decode.tdf                                         ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_decode.tdf                               ;             ;
 ; declut.inc                                             ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/declut.inc                                   ;             ;
 ; lpm_compare.inc                                        ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_compare.inc                              ;             ;
-; db/decode_vnf.tdf                                      ; yes             ; Auto-Generated Megafunction                  ; C:/Users/w3k1b/cpen311/lab1/template/db/decode_vnf.tdf                                      ;             ;
+; db/decode_vnf.tdf                                      ; yes             ; Auto-Generated Megafunction                  ; C:/Users/stfar/cpen311/lab1/template/db/decode_vnf.tdf                                      ;             ;
 ; lpm_counter.tdf                                        ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_counter.tdf                              ;             ;
 ; lpm_add_sub.inc                                        ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_add_sub.inc                              ;             ;
 ; cmpconst.inc                                           ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/cmpconst.inc                                 ;             ;
 ; lpm_counter.inc                                        ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_counter.inc                              ;             ;
 ; alt_counter_stratix.inc                                ; yes             ; Megafunction                                 ; c:/altera/14.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                      ;             ;
-; db/cntr_qai.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/w3k1b/cpen311/lab1/template/db/cntr_qai.tdf                                        ;             ;
-; db/cmpr_h9c.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/w3k1b/cpen311/lab1/template/db/cmpr_h9c.tdf                                        ;             ;
-; db/cntr_4vi.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/w3k1b/cpen311/lab1/template/db/cntr_4vi.tdf                                        ;             ;
-; db/cntr_09i.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/w3k1b/cpen311/lab1/template/db/cntr_09i.tdf                                        ;             ;
-; db/cmpr_c9c.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/w3k1b/cpen311/lab1/template/db/cmpr_c9c.tdf                                        ;             ;
-; db/cntr_kri.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/w3k1b/cpen311/lab1/template/db/cntr_kri.tdf                                        ;             ;
-; db/cmpr_99c.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/w3k1b/cpen311/lab1/template/db/cmpr_99c.tdf                                        ;             ;
+; db/cntr_qai.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/stfar/cpen311/lab1/template/db/cntr_qai.tdf                                        ;             ;
+; db/cmpr_h9c.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/stfar/cpen311/lab1/template/db/cmpr_h9c.tdf                                        ;             ;
+; db/cntr_4vi.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/stfar/cpen311/lab1/template/db/cntr_4vi.tdf                                        ;             ;
+; db/cntr_09i.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/stfar/cpen311/lab1/template/db/cntr_09i.tdf                                        ;             ;
+; db/cmpr_c9c.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/stfar/cpen311/lab1/template/db/cmpr_c9c.tdf                                        ;             ;
+; db/cntr_kri.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/stfar/cpen311/lab1/template/db/cntr_kri.tdf                                        ;             ;
+; db/cmpr_99c.tdf                                        ; yes             ; Auto-Generated Megafunction                  ; C:/Users/stfar/cpen311/lab1/template/db/cmpr_99c.tdf                                        ;             ;
 ; sld_rom_sr.vhd                                         ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                               ;             ;
 ; sld_hub.vhd                                            ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_hub.vhd                                  ; work        ;
-; db/ip/sld59a4f0a5/alt_sld_fab.v                        ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/w3k1b/cpen311/lab1/template/db/ip/sld59a4f0a5/alt_sld_fab.v                        ; alt_sld_fab ;
-; db/ip/sld59a4f0a5/submodules/alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/w3k1b/cpen311/lab1/template/db/ip/sld59a4f0a5/submodules/alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld59a4f0a5/submodules/alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/w3k1b/cpen311/lab1/template/db/ip/sld59a4f0a5/submodules/alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld59a4f0a5/submodules/alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/w3k1b/cpen311/lab1/template/db/ip/sld59a4f0a5/submodules/alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld59a4f0a5/submodules/alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/w3k1b/cpen311/lab1/template/db/ip/sld59a4f0a5/submodules/alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; db/ip/sld59a4f0a5/alt_sld_fab.v                        ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/stfar/cpen311/lab1/template/db/ip/sld59a4f0a5/alt_sld_fab.v                        ; alt_sld_fab ;
+; db/ip/sld59a4f0a5/submodules/alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/stfar/cpen311/lab1/template/db/ip/sld59a4f0a5/submodules/alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld59a4f0a5/submodules/alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/stfar/cpen311/lab1/template/db/ip/sld59a4f0a5/submodules/alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld59a4f0a5/submodules/alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/stfar/cpen311/lab1/template/db/ip/sld59a4f0a5/submodules/alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld59a4f0a5/submodules/alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/stfar/cpen311/lab1/template/db/ip/sld59a4f0a5/submodules/alt_sld_fab_splitter.sv   ; alt_sld_fab ;
 ; sld_jtag_hub.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/altera/14.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                             ;             ;
 ; ALTERA_lcdscp2.hex.mif                                 ; yes             ; Auto-Found Memory Initialization File        ; ALTERA_lcdscp2.hex.mif                                                                      ;             ;
 +--------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------+-------------+
@@ -306,16 +310,16 @@ agreement for further details.
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 3114                                                                                 ;
+; Estimate of Logic utilization (ALMs needed) ; 3122                                                                                 ;
 ;                                             ;                                                                                      ;
-; Combinational ALUT usage for logic          ; 2069                                                                                 ;
-;     -- 7 input functions                    ; 22                                                                                   ;
-;     -- 6 input functions                    ; 832                                                                                  ;
-;     -- 5 input functions                    ; 456                                                                                  ;
-;     -- 4 input functions                    ; 144                                                                                  ;
-;     -- <=3 input functions                  ; 615                                                                                  ;
+; Combinational ALUT usage for logic          ; 2089                                                                                 ;
+;     -- 7 input functions                    ; 23                                                                                   ;
+;     -- 6 input functions                    ; 836                                                                                  ;
+;     -- 5 input functions                    ; 459                                                                                  ;
+;     -- 4 input functions                    ; 152                                                                                  ;
+;     -- <=3 input functions                  ; 619                                                                                  ;
 ;                                             ;                                                                                      ;
-; Dedicated logic registers                   ; 5279                                                                                 ;
+; Dedicated logic registers                   ; 5289                                                                                 ;
 ;                                             ;                                                                                      ;
 ; I/O pins                                    ; 147                                                                                  ;
 ; Total MLAB memory bits                      ; 0                                                                                    ;
@@ -325,7 +329,7 @@ agreement for further details.
 ;                                             ;                                                                                      ;
 ; Maximum fan-out node                        ; Generate_Arbitrary_Divided_Clk32:Generate_LCD_scope_Clk|var_clk_div32:Div_Clk|tc_reg ;
 ; Maximum fan-out                             ; 2712                                                                                 ;
-; Total fan-out                               ; 31321                                                                                ;
+; Total fan-out                               ; 31436                                                                                ;
 ; Average fan-out                             ; 3.90                                                                                 ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 
@@ -335,7 +339,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                         ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Basic_Organ_Solution                                                                                   ; 2069 (45)         ; 5279 (50)    ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                       ; work         ;
+; |Basic_Organ_Solution                                                                                   ; 2089 (46)         ; 5289 (51)    ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                       ; work         ;
 ;    |Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|                                                      ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk                                                                                                                                                                                                                                                                                         ; work         ;
 ;       |var_clk_div32:Div_Clk|                                                                           ; 48 (48)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk                                                                                                                                                                                                                                                                   ; work         ;
 ;    |Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk|                                                       ; 48 (0)            ; 39 (0)       ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|Generate_Arbitrary_Divided_Clk32:Gen_2Hz_clk                                                                                                                                                                                                                                                                                          ; work         ;
@@ -370,6 +374,7 @@ agreement for further details.
 ;          |widereg:div_regs_gen[1].div_reg|                                                              ; 1 (1)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg                                                                                                                                                                                        ; work         ;
 ;       |audio_clock:u4|                                                                                  ; 16 (16)           ; 14 (14)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|audio_controller:audio_control|audio_clock:u4                                                                                                                                                                                                                                                                                         ; work         ;
 ;       |audio_converter:u5|                                                                              ; 12 (12)           ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|audio_controller:audio_control|audio_converter:u5                                                                                                                                                                                                                                                                                     ; work         ;
+;    |bit_bouncer8:led_bouncer|                                                                           ; 19 (19)           ; 9 (9)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|bit_bouncer8:led_bouncer                                                                                                                                                                                                                                                                                                              ; work         ;
 ;    |clk_divider:gen_clk_note|                                                                           ; 36 (3)            ; 17 (1)       ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|clk_divider:gen_clk_note                                                                                                                                                                                                                                                                                                              ; work         ;
 ;       |counter:clk_counter|                                                                             ; 16 (16)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|clk_divider:gen_clk_note|counter:clk_counter                                                                                                                                                                                                                                                                                          ; work         ;
 ;       |geq_comparator:clk_comparator|                                                                   ; 17 (17)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|clk_divider:gen_clk_note|geq_comparator:clk_comparator                                                                                                                                                                                                                                                                                ; work         ;
@@ -758,7 +763,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5279  ;
+; Total registers                              ; 5289  ;
 ; Number of registers using Synchronous Clear  ; 144   ;
 ; Number of registers using Synchronous Load   ; 1565  ;
 ; Number of registers using Asynchronous Clear ; 1455  ;
@@ -2972,6 +2977,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_divider:gen_clk_led|counter:clk_counter ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_divider:gen_clk_led|geq_comparator:clk_comparator ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelA ;
 +----------------+-------+------------------------------------------------------+
@@ -3283,6 +3308,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+-------------------------------------+
 ; reset ; Input ; Info     ; Stuck at VCC                        ;
 +-------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clk_divider:gen_clk_led"                                                                                                                                                                                   ;
++-----------------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                        ; Type   ; Severity ; Details                                                                                                                                                                             ;
++-----------------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; half_num_clk_cycles         ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; half_num_clk_cycles[14..11] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; half_num_clk_cycles[10..7]  ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; half_num_clk_cycles[5..0]   ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; half_num_clk_cycles[15]     ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; half_num_clk_cycles[6]      ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; clk_out                     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                 ;
++-----------------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3659,22 +3699,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------------------------------------------+-------+
 ; Type                                                                          ; Count ;
 +-------------------------------------------------------------------------------+-------+
-; arriav_ff                                                                     ; 109   ;
+; arriav_ff                                                                     ; 119   ;
 ;     SCLR                                                                      ; 32    ;
 ;     SLD                                                                       ; 32    ;
-;     plain                                                                     ; 45    ;
+;     plain                                                                     ; 55    ;
 ; arriav_io_obuf                                                                ; 60    ;
-; arriav_lcell_comb                                                             ; 121   ;
+; arriav_lcell_comb                                                             ; 141   ;
 ;     arith                                                                     ; 48    ;
 ;         1 data inputs                                                         ; 48    ;
-;     normal                                                                    ; 73    ;
+;     extend                                                                    ; 1     ;
+;         7 data inputs                                                         ; 1     ;
+;     normal                                                                    ; 92    ;
 ;         0 data inputs                                                         ; 2     ;
-;         1 data inputs                                                         ; 14    ;
-;         2 data inputs                                                         ; 6     ;
-;         3 data inputs                                                         ; 28    ;
-;         4 data inputs                                                         ; 6     ;
-;         5 data inputs                                                         ; 3     ;
-;         6 data inputs                                                         ; 14    ;
+;         1 data inputs                                                         ; 15    ;
+;         2 data inputs                                                         ; 7     ;
+;         3 data inputs                                                         ; 30    ;
+;         4 data inputs                                                         ; 14    ;
+;         5 data inputs                                                         ; 6     ;
+;         6 data inputs                                                         ; 18    ;
 ; blackbox                                                                      ; 16    ;
 ;         ar_clk_div32:Div_Clk                                                  ; 1     ;
 ;         ar_clk_div32:Div_Clk                                                  ; 1     ;
@@ -3695,7 +3737,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port                                                                 ; 438   ;
 ;                                                                               ;       ;
 ; Max LUT depth                                                                 ; 4.00  ;
-; Average LUT depth                                                             ; 1.10  ;
+; Average LUT depth                                                             ; 1.15  ;
 +-------------------------------------------------------------------------------+-------+
 
 
@@ -3733,8 +3775,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------------+
 ; Partition Name   ; Elapsed Time ;
 +------------------+--------------+
-; Top              ; 00:00:00     ;
-; sld_hub:auto_hub ; 00:00:00     ;
+; Top              ; 00:00:01     ;
+; sld_hub:auto_hub ; 00:00:01     ;
 +------------------+--------------+
 
 
@@ -4364,8 +4406,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 14.1.0 Build 186 12/03/2014 SJ Full Version
-    Info: Processing started: Mon Jan 21 09:59:25 2019
+    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+    Info: Processing started: Tue Jan 22 04:30:50 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Basic_Organ_Solution -c Basic_Organ_Solution
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12019): Can't analyze file -- file ../scribble/clock_divider.sv is missing
@@ -4387,16 +4429,14 @@ Warning (10238): Verilog Module Declaration warning at Basic_Organ_Solution.v(40
 Info (12021): Found 1 design units, including 1 entities, in source file basic_organ_solution.v
     Info (12023): Found entity 1: Basic_Organ_Solution
 Info (12127): Elaborating entity "Basic_Organ_Solution" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(451): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(509): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(524): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(525): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(526): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(527): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(528): truncated value with size 8 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(529): truncated value with size 8 to match size of target (7)
-Warning (10030): Net "LED[7..3]" at Basic_Organ_Solution.v(88) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "LED[1]" at Basic_Organ_Solution.v(88) has no driver or initial value, using a default initial value '0'
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(462): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(520): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(535): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(536): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(537): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(538): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(539): truncated value with size 8 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.v(540): truncated value with size 8 to match size of target (7)
 Warning (10034): Output port "LEDR[9..8]" at Basic_Organ_Solution.v(50) has no driver
 Warning (12125): Using design file mux8.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: mux8
@@ -4414,6 +4454,9 @@ Info (12128): Elaborating entity "geq_comparator" for hierarchy "clk_divider:gen
 Info (12128): Elaborating entity "mux8" for hierarchy "mux8:LCD_Line2_selector"
 Info (12128): Elaborating entity "mux8" for hierarchy "mux8:Scope_Info_ChannelA_selector"
 Info (12128): Elaborating entity "mux8" for hierarchy "mux8:Scope_Info_ChannelB_selector"
+Warning (12125): Using design file bit_bouncer8.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: bit_bouncer8
+Info (12128): Elaborating entity "bit_bouncer8" for hierarchy "bit_bouncer8:led_bouncer"
 Warning (12125): Using design file doublesync.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: doublesync
 Info (12128): Elaborating entity "doublesync" for hierarchy "doublesync:user_scope_enable_sync1"
@@ -4489,7 +4532,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file db/ip/s
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld59a4f0a5/submodules/alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_splitter
 Warning (12240): Synthesis found one or more imported partitions that will be treated as black boxes for timing analysis during synthesis
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "GPIO_0[13]" has no driver
     Warning (13040): Bidir "GPIO_0[14]" has no driver
@@ -4571,14 +4614,6 @@ Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "GPIO_0[11]~synth"
     Warning (13010): Node "GPIO_0[12]~synth"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at VCC
-    Warning (13410): Pin "LEDR[1]" is stuck at GND
-    Warning (13410): Pin "LEDR[2]" is stuck at VCC
-    Warning (13410): Pin "LEDR[3]" is stuck at GND
-    Warning (13410): Pin "LEDR[4]" is stuck at GND
-    Warning (13410): Pin "LEDR[5]" is stuck at GND
-    Warning (13410): Pin "LEDR[6]" is stuck at GND
-    Warning (13410): Pin "LEDR[7]" is stuck at GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND
     Warning (13410): Pin "LEDR[9]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
@@ -4642,16 +4677,16 @@ Warning (21074): Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[6]"
     Warning (15610): No output dependent on input pin "SW[7]"
     Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-Info (21057): Implemented 6965 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6985 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 56 output pins
     Info (21060): Implemented 76 bidirectional pins
-    Info (21061): Implemented 6505 logic cells
+    Info (21061): Implemented 6525 logic cells
     Info (21064): Implemented 308 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 136 warnings
-    Info: Peak virtual memory: 857 megabytes
-    Info: Processing ended: Mon Jan 21 09:59:56 2019
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:48
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 127 warnings
+    Info: Peak virtual memory: 4983 megabytes
+    Info: Processing ended: Tue Jan 22 04:31:26 2019
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:00:59
 
 

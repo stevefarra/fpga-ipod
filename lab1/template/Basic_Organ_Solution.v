@@ -286,8 +286,19 @@ Scope_Info_ChannelB_selector
 
 //-------------------------------------------------------------------------------------
 
-assign LED[0] = 1'b1;
-assign LED[2] = 1'b1;
+wire clk_led;
+
+clk_divider
+gen_clk_led
+    (.rst                 (~SW[0]),
+     .half_num_clk_cycles (50000000/2),
+     .clk_in              (CLK_50M),
+     .clk_out             (clk_led));
+
+bit_bouncer8 
+led_bouncer
+    (.clk  (Clock_1Hz),
+     .bits (LED[7:0]));
  
 //=====================================================================================
 //

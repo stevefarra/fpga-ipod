@@ -1794,7 +1794,7 @@
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="689597BC" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2016/05/08 09:54:07  #0" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="689597BC" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2016/05/08 09:54:07  #0" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
           <level enabled="yes" name="condition1" type="basic">
@@ -1849,7 +1849,7 @@
     <single attribute="lock mode" value="0"/>
     <single attribute="sof manager visible" value="1"/>
     <multi attribute="column width" size="23" value="34,34,272,74,68,78,95,96,98,98,88,88,110,101,101,101,101,101,101,101,101,107,78"/>
-    <multi attribute="frame size" size="2" value="958,1008"/>
+    <multi attribute="frame size" size="2" value="1540,1008"/>
     <multi attribute="jtag widget size" size="2" value="334,224"/>
   </global_info>
 </session>

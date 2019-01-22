@@ -1,3 +1,5 @@
+/* Slides a bit back and forth between the
+   LSB and the MSB on rising edge of clk */
 module bit_bouncer8
     (input  logic       clk,
      output logic [7:0] bits);

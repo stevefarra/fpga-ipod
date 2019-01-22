@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Basic_Organ_Solution
-Tue Jan 22 05:28:01 2019
+Tue Jan 22 09:33:52 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -366,12 +366,13 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.06        ;
+; Average used               ; 1.04        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   2.0%      ;
+;     Processors 2-3         ;   2.1%      ;
+;     Processor 4            ; < 0.1%      ;
 +----------------------------+-------------+
 
 
@@ -380,7 +381,7 @@ agreement for further details.
 +------------------------+--------+--------------------------+
 ; SDC File Path          ; Status ; Read at                  ;
 +------------------------+--------+--------------------------+
-; timing_constraints.sdc ; OK     ; Tue Jan 22 05:27:12 2019 ;
+; timing_constraints.sdc ; OK     ; Tue Jan 22 09:33:07 2019 ;
 +------------------------+--------+--------------------------+
 
 
@@ -13418,7 +13419,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Tue Jan 22 05:27:08 2019
+    Info: Processing started: Tue Jan 22 09:33:02 2019
 Info: Command: quartus_sta Basic_Organ_Solution -c Basic_Organ_Solution
 Info: qsta_default_script.tcl version: #3
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -15557,8 +15558,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 5132 megabytes
-    Info: Processing ended: Tue Jan 22 05:28:01 2019
-    Info: Elapsed time: 00:00:53
-    Info: Total CPU time (on all processors): 00:00:53
+    Info: Processing ended: Tue Jan 22 09:33:52 2019
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:00:50
 
 

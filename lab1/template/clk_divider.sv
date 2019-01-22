@@ -1,3 +1,6 @@
+/* Takes an input clk_in and outputs a
+   clk_out whose frequency is determined
+   by half_num_clk_cycles */
 module clk_divider
     (input  logic rst,
      input  logic [15:0] half_num_clk_cycles,

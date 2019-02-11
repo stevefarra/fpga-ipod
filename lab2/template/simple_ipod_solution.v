@@ -223,9 +223,10 @@ wire Sample_Clk_Signal;
 // Insert your code for Lab2 here!
 //
 
-wire        clk_22khz;
-wire        clk_22khz_synced;
+wire        clk_22khz_async;
+wire        clk_22khz_sync;
 wire        gen_addr;
+wire        data_en;
 
 wire        flash_mem_read;
 wire        flash_mem_waitrequest;
@@ -237,32 +238,27 @@ wire        flash_mem_readdatavalid;
 wire        Clock_1Hz_synced;
 
 
-// clk_divider gen_clk_22khz(
-//   .rst                 (1'b0),
-//   .half_num_clk_cycles (16'h470),
-//   .clk_in              (CLK_50M),
-//   .clk_out             (clk_22khz)
-// );
+clk_divider gen_clk_22khz(
+  .rst                 (1'b0),
+  .half_num_clk_cycles (16'h470),
+  .clk_in              (CLK_50M),
+  .clk_out             (clk_22khz_async)
+);
 
-// synchronizer sync_clk_22khz(
-//   .clk       (CLK_50M),
-//   .clk_async (clk_22khz),
-//   .clk_sync  (clk_22khz_synced)
-// );
-
-synchronizer sync_clk_1hz(
+synchronizer sync_clk_22khz(
   .clk       (CLK_50M),
-  .clk_async (Clock_1Hz),
-  .clk_sync  (Clock_1Hz_synced)
+  .clk_async (clk_22khz_async),
+  .clk_sync  (clk_22khz_sync)
 );
 
 flash_fsm flash_fsm_inst(
   .clk           (CLK_50M),
   .rst           (1'b0),
-  .start         (Clock_1Hz_synced),
+  .start         (clk_22khz_sync),
   .readdatavalid (flash_mem_readdatavalid),
   .gen_addr      (gen_addr),
   .read          (flash_mem_read)
+  .data_en       (data_en)
 );
 
 counter #(23) addr_ctrl(
@@ -291,7 +287,7 @@ assign Sample_Clk_Signal = Clock_1KHz;
 reg [15:0] audio_data; //generate signed sample audio signal
 
 always @(posedge CLK_50M)
-  if (flash_mem_readdatavalid)
+  if (data_en)
     audio_data = flash_mem_address[0] ? flash_mem_readdata[31:16] : flash_mem_readdata[15:0];
 
 //======================================================================================

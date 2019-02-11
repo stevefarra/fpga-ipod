@@ -8,118 +8,187 @@ z2
 !i10f 100
 cModel Technology
 dC:/altera/14.1
-vflash_fsm
+vclk_divider
 Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-!s110 1549867318
+Z1 !s110 1549912076
 !i10b 1
-!s100 77ZNXcoeJD4zaj^53W8TY3
-I7kS77?CePD<d2gdPkhfib0
-Z1 V`JN@9S9cnhjKRR_L]QIcM3
+!s100 [6QNXDl7VWjBU0KCLoQ0U0
+IXhF?k9`>gZNHlhl=5Ve8=3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 clk_divider_sv_unit
+S1
+Z3 dC:/Users/stfar/cpen311/lab2/sim
+w1549853968
+8C:/Users/stfar/cpen311/lab2/src/clk_divider.sv
+FC:/Users/stfar/cpen311/lab2/src/clk_divider.sv
+L0 4
+Z4 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1549912076.380000
+!s107 C:/Users/stfar/cpen311/lab2/src/clk_divider.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/clk_divider.sv|
+!i113 1
+Z5 o-work work -sv
+vcounter
+R0
+R1
+!i10b 1
+!s100 Hl8_A4>o9VR^TJk3kRHbM1
+I63fhgh5`P72Fo[?Z_k;[_2
+R2
+!s105 counter_sv_unit
+S1
+R3
+w1549855404
+8C:/Users/stfar/cpen311/lab2/src/counter.sv
+FC:/Users/stfar/cpen311/lab2/src/counter.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1549912076.565000
+!s107 C:/Users/stfar/cpen311/lab2/src/counter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/counter.sv|
+!i113 1
+R5
+vflash_fsm
+R0
+R1
+!i10b 1
+!s100 jDg0QYI9HgX3[gMkazHzO0
+IEbiT5bQcbohoWWUDN<Q:70
+R2
 !s105 flash_fsm_sv_unit
 S1
-Z2 dC:/Users/stfar/cpen311/lab2/sim
-w1549867305
+R3
+w1549912025
 8C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv
 FC:/Users/stfar/cpen311/lab2/src/flash_fsm.sv
 L0 1
-Z3 OV;L;10.3c;59
+R4
 r1
 !s85 0
 31
-!s108 1549867318.616000
+!s108 1549912076.731000
 !s107 C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv|
 !i113 1
-Z4 o-work work -sv
+R5
 vflash_fsm_tb
 R0
-!s110 1549866830
+!s110 1549912172
 !i10b 1
-!s100 SeRR]G>bfBzL3@M7;_[931
-IcBdOUQI?4]ECJzBOk1NEB3
-R1
+!s100 O=za;<AIOieL1Qo5g=c0h1
+I2]Q]N4;TMfEJX1]^WWkLW0
+R2
 !s105 flash_fsm_tb_sv_unit
 S1
-R2
-w1549866810
+R3
+w1549912139
 8C:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv
 FC:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1549866830.875000
+!s108 1549912172.143000
 !s107 C:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv|
 !i113 1
+R5
+vgeq_comparator
+R0
+Z6 !s110 1549912077
+!i10b 1
+!s100 DOoH[hcSlh8VAQhC`MXj33
+I6kVSVkEG5`0hF0jia34HS3
+R2
+!s105 geq_comparator_sv_unit
+S1
+R3
+w1548179440
+8C:/Users/stfar/cpen311/lab2/src/geq_comparator.sv
+FC:/Users/stfar/cpen311/lab2/src/geq_comparator.sv
+L0 1
 R4
+r1
+!s85 0
+31
+!s108 1549912077.163000
+!s107 C:/Users/stfar/cpen311/lab2/src/geq_comparator.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/geq_comparator.sv|
+!i113 1
+R5
 vreg_rst_sync
 R0
-!s110 1549909054
+R6
 !i10b 1
 !s100 @UbHTR05`X@`cVzbRGk<^1
 IVRe:k:YX<Jo<Hc[6::AGF1
-R1
+R2
 !s105 reg_rst_sync_sv_unit
 S1
-R2
+R3
 w1549908940
 8C:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv
 FC:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1549909054.677000
+!s108 1549912077.344000
 !s107 C:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv|
 !i113 1
-R4
+R5
 vsynchronizer
 R0
-!s110 1549909026
+R6
 !i10b 1
 !s100 fYGAH24FGYoM^TKhDYP]c1
 IKW4b46zLCIPo?F;d>]`nc2
-R1
+R2
 !s105 synchronizer_sv_unit
 S1
-R2
+R3
 w1549908978
 8C:/Users/stfar/cpen311/lab2/src/synchronizer.sv
 FC:/Users/stfar/cpen311/lab2/src/synchronizer.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1549909026.328000
+!s108 1549912077.582000
 !s107 C:/Users/stfar/cpen311/lab2/src/synchronizer.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/synchronizer.sv|
 !i113 1
-R4
+R5
 vsynchronizer_tb
 R0
-!s110 1549866687
+!s110 1549912078
 !i10b 1
-!s100 i7N=F4FiSzm?`ddYFDc6j3
-Iif4^;RO]V91U5W<<2IU^Q0
-R1
+!s100 ?kKg4Rnb2ZQFYU`7JJg2L1
+IAbH@:l6hXPlBzRU<i4iTh1
+R2
 !s105 synchronizer_tb_sv_unit
 S1
-R2
-w1549865307
-8C:/Users/stfar/cpen311/lab2/src/synchronizer_tb.sv
-FC:/Users/stfar/cpen311/lab2/src/synchronizer_tb.sv
-L0 1
 R3
+w1549909022
+8C:/Users/stfar/cpen311/lab2/src/tb/synchronizer_tb.sv
+FC:/Users/stfar/cpen311/lab2/src/tb/synchronizer_tb.sv
+L0 1
+R4
 r1
 !s85 0
 31
-!s108 1549866687.956000
-!s107 C:/Users/stfar/cpen311/lab2/src/synchronizer_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/synchronizer_tb.sv|
+!s108 1549912077.965000
+!s107 C:/Users/stfar/cpen311/lab2/src/tb/synchronizer_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/synchronizer_tb.sv|
 !i113 1
-R4
+R5

@@ -1,0 +1,54 @@
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
++------------------------------------------------------------------------+
+; Quartus II QXP Design File                                             ;
++------------------+-----------------------------------------------------+
+; Field            ; Value                                               ;
++------------------+-----------------------------------------------------+
+; Entity           ; flash                                               ;
+; Case Sensitive   ;                                                     ;
+; QXP Source       ; flash.qxp                                           ;
+; Software Version ; Version 14.1.0 Build 186 12/03/2014 SJ Full Version ;
+; Date             ; Thu May 05 20:25:53 2016                            ;
+; Contents         ; Netlist Only                                        ;
+; Family           ; 5CSEMA5F31C6                                        ;
+; Device           ; CYCLONEV_SE90M_V_F896C6                             ;
++------------------+-----------------------------------------------------+
+
++------------------------------------------------------------------------+
+; Boundary Ports                                                         ;
++----------------------------+--------+----------------------------------+
+; Port Name                  ; Type   ; Default Value                    ;
++----------------------------+--------+----------------------------------+
+; clk_clk                    ; input  ; 0                                ;
+; flash_csr_read             ; input  ; 0                                ;
+; flash_csr_waitrequest      ; output ; 0                                ;
+; flash_csr_write            ; input  ; 0                                ;
+; flash_csr_address [2:0]    ; input  ; 000                              ;
+; flash_csr_writedata [31:0] ; input  ; 00000000000000000000000000000000 ;
+; flash_csr_readdata [31:0]  ; output ; 00000000000000000000000000000000 ;
+; flash_csr_readdatavalid    ; output ; 0                                ;
+; flash_mem_write            ; input  ; 0                                ;
+; flash_mem_burstcount [6:0] ; input  ; 0000000                          ;
+; flash_mem_waitrequest      ; output ; 0                                ;
+; flash_mem_read             ; input  ; 0                                ;
+; flash_mem_address [21:0]   ; input  ; 0000000000000000000000           ;
+; flash_mem_writedata [31:0] ; input  ; 00000000000000000000000000000000 ;
+; flash_mem_readdata [31:0]  ; output ; 00000000000000000000000000000000 ;
+; flash_mem_readdatavalid    ; output ; 0                                ;
+; flash_mem_byteenable [3:0] ; input  ; 0000                             ;
+; reset_reset_n              ; input  ; 0                                ;
++----------------------------+--------+----------------------------------+

@@ -12,8 +12,7 @@ module clk_divider_tb();
     logic        sim_clk_in;
     logic        sim_clk_out;
 
-    clk_divider
-    dut
+    clk_divider dut
         (.rst                 (sim_rst),
          .half_num_clk_cycles (sim_half_num_clk_cycles),
          .clk_in              (sim_clk_in),

@@ -1,0 +1,125 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/14.1
+vflash_fsm
+Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1549867318
+!i10b 1
+!s100 77ZNXcoeJD4zaj^53W8TY3
+I7kS77?CePD<d2gdPkhfib0
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 flash_fsm_sv_unit
+S1
+Z2 dC:/Users/stfar/cpen311/lab2/sim
+w1549867305
+8C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv
+FC:/Users/stfar/cpen311/lab2/src/flash_fsm.sv
+L0 1
+Z3 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1549867318.616000
+!s107 C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv|
+!i113 1
+Z4 o-work work -sv
+vflash_fsm_tb
+R0
+!s110 1549866830
+!i10b 1
+!s100 SeRR]G>bfBzL3@M7;_[931
+IcBdOUQI?4]ECJzBOk1NEB3
+R1
+!s105 flash_fsm_tb_sv_unit
+S1
+R2
+w1549866810
+8C:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv
+FC:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1549866830.875000
+!s107 C:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv|
+!i113 1
+R4
+vreg_rst_sync
+R0
+!s110 1549909054
+!i10b 1
+!s100 @UbHTR05`X@`cVzbRGk<^1
+IVRe:k:YX<Jo<Hc[6::AGF1
+R1
+!s105 reg_rst_sync_sv_unit
+S1
+R2
+w1549908940
+8C:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv
+FC:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1549909054.677000
+!s107 C:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv|
+!i113 1
+R4
+vsynchronizer
+R0
+!s110 1549909026
+!i10b 1
+!s100 fYGAH24FGYoM^TKhDYP]c1
+IKW4b46zLCIPo?F;d>]`nc2
+R1
+!s105 synchronizer_sv_unit
+S1
+R2
+w1549908978
+8C:/Users/stfar/cpen311/lab2/src/synchronizer.sv
+FC:/Users/stfar/cpen311/lab2/src/synchronizer.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1549909026.328000
+!s107 C:/Users/stfar/cpen311/lab2/src/synchronizer.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/synchronizer.sv|
+!i113 1
+R4
+vsynchronizer_tb
+R0
+!s110 1549866687
+!i10b 1
+!s100 i7N=F4FiSzm?`ddYFDc6j3
+Iif4^;RO]V91U5W<<2IU^Q0
+R1
+!s105 synchronizer_tb_sv_unit
+S1
+R2
+w1549865307
+8C:/Users/stfar/cpen311/lab2/src/synchronizer_tb.sv
+FC:/Users/stfar/cpen311/lab2/src/synchronizer_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1549866687.956000
+!s107 C:/Users/stfar/cpen311/lab2/src/synchronizer_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/synchronizer_tb.sv|
+!i113 1
+R4

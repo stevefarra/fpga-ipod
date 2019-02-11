@@ -222,41 +222,77 @@ wire Sample_Clk_Signal;
 //
 // Insert your code for Lab2 here!
 //
-//
+
+wire        clk_22khz;
+wire        clk_22khz_synced;
+wire        gen_addr;
+
+wire        flash_mem_read;
+wire        flash_mem_waitrequest;
+wire [22:0] flash_mem_address;
+wire [31:0] flash_mem_readdata;
+wire        flash_mem_readdatavalid;
+
+// Debug
+wire        Clock_1Hz_synced;
 
 
+// clk_divider gen_clk_22khz(
+//   .rst                 (1'b0),
+//   .half_num_clk_cycles (16'h470),
+//   .clk_in              (CLK_50M),
+//   .clk_out             (clk_22khz)
+// );
 
+// synchronizer sync_clk_22khz(
+//   .clk       (CLK_50M),
+//   .clk_async (clk_22khz),
+//   .clk_sync  (clk_22khz_synced)
+// );
 
-wire            flash_mem_read;
-wire            flash_mem_waitrequest;
-wire    [22:0]  flash_mem_address;
-wire    [31:0]  flash_mem_readdata;
-wire            flash_mem_readdatavalid;
-wire    [3:0]   flash_mem_byteenable;
+synchronizer sync_clk_1hz(
+  .clk       (CLK_50M),
+  .clk_async (Clock_1Hz),
+  .clk_sync  (Clock_1Hz_synced)
+);
 
+flash_fsm flash_fsm_inst(
+  .clk           (CLK_50M),
+  .rst           (1'b0),
+  .start         (Clock_1Hz_synced),
+  .readdatavalid (flash_mem_readdatavalid),
+  .gen_addr      (gen_addr),
+  .read          (flash_mem_read)
+);
+
+counter #(23) addr_ctrl(
+  .clk   (CLK_50M),
+  .en    (gen_addr),
+  .rst   (1'b0),
+  .count (flash_mem_address)
+);
 
 flash flash_inst (
     .clk_clk                 (CLK_50M),
     .reset_reset_n           (1'b1),
     .flash_mem_write         (1'b0),
-    .flash_mem_burstcount    (1'b1),
+    .flash_mem_burstcount    (6'b000001),
     .flash_mem_waitrequest   (flash_mem_waitrequest),
     .flash_mem_read          (flash_mem_read),
     .flash_mem_address       (flash_mem_address),
-    .flash_mem_writedata     (),
+    .flash_mem_writedata     (32'b0),
     .flash_mem_readdata      (flash_mem_readdata),
     .flash_mem_readdatavalid (flash_mem_readdatavalid),
-    .flash_mem_byteenable    (flash_mem_byteenable)
+    .flash_mem_byteenable    (4'b1111)
 );
-            
 
 assign Sample_Clk_Signal = Clock_1KHz;
 
-//Audio Generation Signal
-//Note that the audio needs signed data - so convert 1 bit to 8 bits signed
-wire [7:0] audio_data = {~Sample_Clk_Signal,{7{Sample_Clk_Signal}}}; //generate signed sample audio signal
+reg [15:0] audio_data; //generate signed sample audio signal
 
-
+always @(posedge CLK_50M)
+  if (flash_mem_readdatavalid)
+    audio_data = flash_mem_address[0] ? flash_mem_readdata[31:16] : flash_mem_readdata[15:0];
 
 //======================================================================================
 // 
@@ -398,18 +434,18 @@ LCD_Scope_Encapsulated_pacoblaze_wrapper LCD_LED_scope(
 					    .lcd_e(GPIO_0[10]),
 					    .clk(CLK_50M),
                 
-                        //LCD Display values
-                      .InH(8'hAA),
-                      .InG(8'hBB),
-                      .InF(8'h01),
-                       .InE(8'h23),
-                      .InD(8'h45),
-                      .InC(8'h67),
-                      .InB(8'h89),
-                     .InA(8'h00),
+                    //LCD Display values
+                          .InH(8'hAA),
+                          .InG(8'hBB),
+                          .InF(8'h01),
+                          .InE(8'h23),
+                          .InD(8'h45),
+                          .InC(8'h67),
+                          .InB(flash_mem_address[15:8]),
+                          .InA(flash_mem_address[7:0]),
                           
                      //LCD display information signals
-                         .InfoH({scope_info15,scope_info14}),
+                          .InfoH({scope_info15,scope_info14}),
                           .InfoG({scope_info13,scope_info12}),
                           .InfoF({scope_info11,scope_info10}),
                           .InfoE({scope_info9,scope_info8}),

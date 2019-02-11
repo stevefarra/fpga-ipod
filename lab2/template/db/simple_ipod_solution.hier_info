@@ -1,5 +1,5 @@
 |simple_ipod_solution
-CLOCK_50 => CLK_50M.IN20
+CLOCK_50 => CLK_50M.IN21
 LEDR[0] <= <GND>
 LEDR[1] <= <GND>
 LEDR[2] <= <GND>
@@ -13,7 +13,9 @@ LEDR[9] <= <GND>
 KEY[0] => _.IN1
 KEY[1] => _.IN1
 KEY[2] => _.IN1
-KEY[3] => ~NO_FANOUT~
+KEY[3] => _.IN1
+KEY[3] => _.IN1
+KEY[3] => _.IN1
 SW[0] => ~NO_FANOUT~
 SW[1] => ScopeChannelBSignal.DATAIN
 SW[2] => ~NO_FANOUT~
@@ -189,24 +191,182 @@ GPIO_1[34] <> <UNC>
 GPIO_1[35] <> <UNC>
 
 
-|simple_ipod_solution|synchronizer:sync_clk_1hz
-clk => clk_sync~reg0.CLK
-clk => x.CLK
-clk_async => x.DATAIN
-clk_sync <= clk_sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|simple_ipod_solution|clk_divider:gen_clk_22khz
+rst => comb.IN1
+rst => clk_out.OUTPUTSELECT
+half_num_clk_cycles[0] => half_num_clk_cycles[0].IN1
+half_num_clk_cycles[1] => half_num_clk_cycles[1].IN1
+half_num_clk_cycles[2] => half_num_clk_cycles[2].IN1
+half_num_clk_cycles[3] => half_num_clk_cycles[3].IN1
+half_num_clk_cycles[4] => half_num_clk_cycles[4].IN1
+half_num_clk_cycles[5] => half_num_clk_cycles[5].IN1
+half_num_clk_cycles[6] => half_num_clk_cycles[6].IN1
+half_num_clk_cycles[7] => half_num_clk_cycles[7].IN1
+half_num_clk_cycles[8] => half_num_clk_cycles[8].IN1
+half_num_clk_cycles[9] => half_num_clk_cycles[9].IN1
+half_num_clk_cycles[10] => half_num_clk_cycles[10].IN1
+half_num_clk_cycles[11] => half_num_clk_cycles[11].IN1
+half_num_clk_cycles[12] => half_num_clk_cycles[12].IN1
+half_num_clk_cycles[13] => half_num_clk_cycles[13].IN1
+half_num_clk_cycles[14] => half_num_clk_cycles[14].IN1
+half_num_clk_cycles[15] => half_num_clk_cycles[15].IN1
+clk_in => clk_in.IN1
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simple_ipod_solution|clk_divider:gen_clk_22khz|counter:clk_counter
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+clk => count[4]~reg0.CLK
+clk => count[5]~reg0.CLK
+clk => count[6]~reg0.CLK
+clk => count[7]~reg0.CLK
+clk => count[8]~reg0.CLK
+clk => count[9]~reg0.CLK
+clk => count[10]~reg0.CLK
+clk => count[11]~reg0.CLK
+clk => count[12]~reg0.CLK
+clk => count[13]~reg0.CLK
+clk => count[14]~reg0.CLK
+clk => count[15]~reg0.CLK
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[8] <= count[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[9] <= count[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[10] <= count[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[11] <= count[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[12] <= count[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[13] <= count[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[14] <= count[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[15] <= count[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simple_ipod_solution|clk_divider:gen_clk_22khz|geq_comparator:clk_comparator
+in1[0] => LessThan0.IN16
+in1[1] => LessThan0.IN15
+in1[2] => LessThan0.IN14
+in1[3] => LessThan0.IN13
+in1[4] => LessThan0.IN12
+in1[5] => LessThan0.IN11
+in1[6] => LessThan0.IN10
+in1[7] => LessThan0.IN9
+in1[8] => LessThan0.IN8
+in1[9] => LessThan0.IN7
+in1[10] => LessThan0.IN6
+in1[11] => LessThan0.IN5
+in1[12] => LessThan0.IN4
+in1[13] => LessThan0.IN3
+in1[14] => LessThan0.IN2
+in1[15] => LessThan0.IN1
+in2[0] => LessThan0.IN32
+in2[1] => LessThan0.IN31
+in2[2] => LessThan0.IN30
+in2[3] => LessThan0.IN29
+in2[4] => LessThan0.IN28
+in2[5] => LessThan0.IN27
+in2[6] => LessThan0.IN26
+in2[7] => LessThan0.IN25
+in2[8] => LessThan0.IN24
+in2[9] => LessThan0.IN23
+in2[10] => LessThan0.IN22
+in2[11] => LessThan0.IN21
+in2[12] => LessThan0.IN20
+in2[13] => LessThan0.IN19
+in2[14] => LessThan0.IN18
+in2[15] => LessThan0.IN17
+out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simple_ipod_solution|synchronizer:sync_clk_22khz
+clk => clk.IN3
+clk_async => clk_async.IN1
+clk_sync <= clk_sync.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simple_ipod_solution|synchronizer:sync_clk_22khz|reg_rst_sync:reg1
+clk => q[0]~reg0.CLK
+rst => q[0]~reg0.ACLR
+d[0] => q[0]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simple_ipod_solution|synchronizer:sync_clk_22khz|reg_rst_sync:reg2
+clk => q[0]~reg0.CLK
+rst => q[0]~reg0.ACLR
+d[0] => q[0]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simple_ipod_solution|synchronizer:sync_clk_22khz|reg_rst_sync:reg3
+clk => q[0]~reg0.CLK
+rst => q[0]~reg0.ACLR
+d[0] => q[0]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simple_ipod_solution|synchronizer:sync_clk_22khz|reg_rst_sync:reg4
+clk => q[0]~reg0.CLK
+rst => q[0]~reg0.ACLR
+d[0] => q[0]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |simple_ipod_solution|flash_fsm:flash_fsm_inst
 clk => state[0].CLK
 clk => state[1].CLK
+clk => state[2].CLK
+rst => state.OUTPUTSELECT
 rst => state.OUTPUTSELECT
 rst => state.OUTPUTSELECT
 start => state.OUTPUTSELECT
 start => state.OUTPUTSELECT
+start => state.OUTPUTSELECT
+readdatavalid => state.OUTPUTSELECT
 readdatavalid => state.OUTPUTSELECT
 readdatavalid => state.OUTPUTSELECT
 gen_addr <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 read <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+data_en <= state[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |simple_ipod_solution|counter:addr_ctrl

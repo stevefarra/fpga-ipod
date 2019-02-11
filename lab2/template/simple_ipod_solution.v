@@ -239,8 +239,8 @@ wire        Clock_1Hz_synced;
 
 
 clk_divider gen_clk_22khz(
-  .rst                 (1'b0),
-  .half_num_clk_cycles (16'h470),
+  .rst                 (~KEY[3]),
+  .half_num_clk_cycles (16'h8e1),
   .clk_in              (CLK_50M),
   .clk_out             (clk_22khz_async)
 );
@@ -253,22 +253,22 @@ synchronizer sync_clk_22khz(
 
 flash_fsm flash_fsm_inst(
   .clk           (CLK_50M),
-  .rst           (1'b0),
+  .rst           (~KEY[3]),
   .start         (clk_22khz_sync),
   .readdatavalid (flash_mem_readdatavalid),
   .gen_addr      (gen_addr),
-  .read          (flash_mem_read)
+  .read          (flash_mem_read),
   .data_en       (data_en)
 );
 
 counter #(23) addr_ctrl(
   .clk   (CLK_50M),
   .en    (gen_addr),
-  .rst   (1'b0),
+  .rst   (~KEY[3]),
   .count (flash_mem_address)
 );
 
-flash flash_inst (
+flash flash_inst(
     .clk_clk                 (CLK_50M),
     .reset_reset_n           (1'b1),
     .flash_mem_write         (1'b0),

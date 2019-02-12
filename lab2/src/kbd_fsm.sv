@@ -8,15 +8,15 @@ module kbd_fsm
     // {dir, playpause}
     logic [1:0] state;
 
-    parameter [2:0]  PLAY_FWD = 2'b11;
-    parameter [2:0] PAUSE_FWD = 2'b10;
-    parameter [2:0]  PLAY_REV = 2'b01;
-    parameter [2:0] PAUSE_REV = 2'b00;
+    parameter [1:0]  PLAY_FWD = 2'b11;
+    parameter [1:0] PAUSE_FWD = 2'b10;
+    parameter [1:0]  PLAY_REV = 2'b01;
+    parameter [1:0] PAUSE_REV = 2'b00;
 
-    parameter [8:0]  PLAY = 8'h45; // E
-    parameter [8:0] PAUSE = 8'h44; // D
-    parameter [8:0]   FWD = 8'h46; // F
-    parameter [8:0]   REV = 8'h42; // B
+    parameter [7:0]  PLAY = 8'h45; // E
+    parameter [7:0] PAUSE = 8'h44; // D
+    parameter [7:0]   FWD = 8'h46; // F
+    parameter [7:0]   REV = 8'h42; // B
 
     always_ff @(posedge clk)
         if (rst)

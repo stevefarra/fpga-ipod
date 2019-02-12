@@ -1,15 +1,15 @@
 |simple_ipod_solution
 CLOCK_50 => CLK_50M.IN22
-LEDR[0] << <GND>
-LEDR[1] << <GND>
-LEDR[2] << <GND>
-LEDR[3] << <GND>
-LEDR[4] << <GND>
-LEDR[5] << <GND>
-LEDR[6] << <GND>
-LEDR[7] << <GND>
-LEDR[8] << <GND>
-LEDR[9] << <GND>
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
 KEY[0] => _.IN1
 KEY[1] => _.IN1
 KEY[2] => _.IN1
@@ -27,77 +27,77 @@ SW[6] => ~NO_FANOUT~
 SW[7] => ~NO_FANOUT~
 SW[8] => scope_enable_source.IN1
 SW[9] => choose_LCD_or_SCOPE.IN1
-HEX0[0] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
-HEX0[1] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
-HEX0[2] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
-HEX0[3] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
-HEX0[4] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
-HEX0[5] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
-HEX0[6] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
-HEX1[0] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
-HEX1[1] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
-HEX1[2] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
-HEX1[3] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
-HEX1[4] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
-HEX1[5] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
-HEX1[6] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
-HEX2[0] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
-HEX2[1] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
-HEX2[2] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
-HEX2[3] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
-HEX2[4] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
-HEX2[5] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
-HEX2[6] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
-HEX3[0] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
-HEX3[1] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
-HEX3[2] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
-HEX3[3] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
-HEX3[4] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
-HEX3[5] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
-HEX3[6] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
-HEX4[0] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
-HEX4[1] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
-HEX4[2] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
-HEX4[3] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
-HEX4[4] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
-HEX4[5] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
-HEX4[6] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
-HEX5[0] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
-HEX5[1] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
-HEX5[2] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
-HEX5[3] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
-HEX5[4] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
-HEX5[5] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
-HEX5[6] << SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
+HEX0[0] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
+HEX0[1] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
+HEX0[2] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
+HEX0[3] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
+HEX0[4] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
+HEX0[5] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
+HEX0[6] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0.ssOut
+HEX1[0] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
+HEX1[1] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
+HEX1[2] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
+HEX1[3] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
+HEX1[4] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
+HEX1[5] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
+HEX1[6] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst1.ssOut
+HEX2[0] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
+HEX2[1] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
+HEX2[2] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
+HEX2[3] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
+HEX2[4] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
+HEX2[5] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
+HEX2[6] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst2.ssOut
+HEX3[0] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
+HEX3[1] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
+HEX3[2] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
+HEX3[3] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
+HEX3[4] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
+HEX3[5] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
+HEX3[6] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst3.ssOut
+HEX4[0] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
+HEX4[1] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
+HEX4[2] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
+HEX4[3] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
+HEX4[4] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
+HEX4[5] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
+HEX4[6] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst4.ssOut
+HEX5[0] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
+HEX5[1] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
+HEX5[2] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
+HEX5[3] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
+HEX5[4] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
+HEX5[5] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
+HEX5[6] <= SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst5.ssOut
 AUD_ADCDAT => AUD_ADCDAT.IN1
 AUD_ADCLRCK <> audio_controller:audio_control.AUD_ADCLRCK
 AUD_BCLK <> audio_controller:audio_control.AUD_BCLK
-AUD_DACDAT << audio_controller:audio_control.oAUD_DACDAT
+AUD_DACDAT <= audio_controller:audio_control.oAUD_DACDAT
 AUD_DACLRCK <> audio_controller:audio_control.AUD_DACLRCK
-AUD_XCK << audio_controller:audio_control.oAUD_XCK
-FPGA_I2C_SCLK << audio_controller:audio_control.oI2C_SCLK
+AUD_XCK <= audio_controller:audio_control.oAUD_XCK
+FPGA_I2C_SCLK <= audio_controller:audio_control.oI2C_SCLK
 FPGA_I2C_SDAT <> audio_controller:audio_control.I2C_SDAT
 PS2_CLK <> doublesync:ps2c_doublsync.indata
 PS2_DAT <> doublesync:ps2d_doublsync.indata
-DRAM_ADDR[0] << <GND>
-DRAM_ADDR[1] << <GND>
-DRAM_ADDR[2] << <GND>
-DRAM_ADDR[3] << <GND>
-DRAM_ADDR[4] << <GND>
-DRAM_ADDR[5] << <GND>
-DRAM_ADDR[6] << <GND>
-DRAM_ADDR[7] << <GND>
-DRAM_ADDR[8] << <GND>
-DRAM_ADDR[9] << <GND>
-DRAM_ADDR[10] << <GND>
-DRAM_ADDR[11] << <GND>
-DRAM_ADDR[12] << <GND>
-DRAM_BA[0] << <GND>
-DRAM_BA[1] << <GND>
-DRAM_CAS_N << <GND>
-DRAM_CKE << <GND>
-DRAM_CLK << <GND>
-DRAM_CS_N << <GND>
+DRAM_ADDR[0] <= <GND>
+DRAM_ADDR[1] <= <GND>
+DRAM_ADDR[2] <= <GND>
+DRAM_ADDR[3] <= <GND>
+DRAM_ADDR[4] <= <GND>
+DRAM_ADDR[5] <= <GND>
+DRAM_ADDR[6] <= <GND>
+DRAM_ADDR[7] <= <GND>
+DRAM_ADDR[8] <= <GND>
+DRAM_ADDR[9] <= <GND>
+DRAM_ADDR[10] <= <GND>
+DRAM_ADDR[11] <= <GND>
+DRAM_ADDR[12] <= <GND>
+DRAM_BA[0] <= <GND>
+DRAM_BA[1] <= <GND>
+DRAM_CAS_N <= <GND>
+DRAM_CKE <= <GND>
+DRAM_CLK <= <GND>
+DRAM_CS_N <= <GND>
 DRAM_DQ[0] <> <UNC>
 DRAM_DQ[1] <> <UNC>
 DRAM_DQ[2] <> <UNC>
@@ -114,10 +114,10 @@ DRAM_DQ[12] <> <UNC>
 DRAM_DQ[13] <> <UNC>
 DRAM_DQ[14] <> <UNC>
 DRAM_DQ[15] <> <UNC>
-DRAM_LDQM << <GND>
-DRAM_UDQM << <GND>
-DRAM_RAS_N << <GND>
-DRAM_WE_N << <GND>
+DRAM_LDQM <= <GND>
+DRAM_UDQM <= <GND>
+DRAM_RAS_N <= <GND>
+DRAM_WE_N <= <GND>
 GPIO_0[0] <> LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope.lcd_d
 GPIO_0[1] <> LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope.lcd_d
 GPIO_0[2] <> LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope.lcd_d
@@ -192,7 +192,86 @@ GPIO_1[34] <> <UNC>
 GPIO_1[35] <> <UNC>
 
 
-|simple_ipod_solution|clk_divider:gen_clk_22khz
+|simple_ipod_solution|freq_ctrl:freq_ctrl_inst
+speed_up => inc_counter[2].CLK
+speed_up => inc_counter[3].CLK
+speed_up => inc_counter[4].CLK
+speed_up => inc_counter[5].CLK
+speed_up => inc_counter[6].CLK
+speed_up => inc_counter[7].CLK
+speed_up => inc_counter[8].CLK
+speed_up => inc_counter[9].CLK
+speed_up => inc_counter[10].CLK
+speed_up => inc_counter[11].CLK
+speed_up => inc_counter[12].CLK
+speed_down => dec_counter[2].CLK
+speed_down => dec_counter[3].CLK
+speed_down => dec_counter[4].CLK
+speed_down => dec_counter[5].CLK
+speed_down => dec_counter[6].CLK
+speed_down => dec_counter[7].CLK
+speed_down => dec_counter[8].CLK
+speed_down => dec_counter[9].CLK
+speed_down => dec_counter[10].CLK
+speed_down => dec_counter[11].CLK
+speed_down => dec_counter[12].CLK
+speed_rst => dec_counter[2].ACLR
+speed_rst => dec_counter[3].ACLR
+speed_rst => dec_counter[4].ACLR
+speed_rst => dec_counter[5].ACLR
+speed_rst => dec_counter[6].ACLR
+speed_rst => dec_counter[7].ACLR
+speed_rst => dec_counter[8].ACLR
+speed_rst => dec_counter[9].ACLR
+speed_rst => dec_counter[10].ACLR
+speed_rst => dec_counter[11].ACLR
+speed_rst => dec_counter[12].ACLR
+speed_rst => inc_counter[2].ACLR
+speed_rst => inc_counter[3].ACLR
+speed_rst => inc_counter[4].ACLR
+speed_rst => inc_counter[5].ACLR
+speed_rst => inc_counter[6].ACLR
+speed_rst => inc_counter[7].ACLR
+speed_rst => inc_counter[8].ACLR
+speed_rst => inc_counter[9].ACLR
+speed_rst => inc_counter[10].ACLR
+speed_rst => inc_counter[11].ACLR
+speed_rst => inc_counter[12].ACLR
+freq_base[0] => Add2.IN19
+freq_base[1] => Add2.IN18
+freq_base[2] => Add2.IN17
+freq_base[3] => Add2.IN16
+freq_base[4] => Add2.IN15
+freq_base[5] => Add2.IN14
+freq_base[6] => Add2.IN13
+freq_base[7] => Add2.IN12
+freq_base[8] => Add2.IN11
+freq_base[9] => Add2.IN10
+freq_base[10] => Add2.IN9
+freq_base[11] => Add2.IN8
+freq_base[12] => Add2.IN7
+freq_base[13] => Add2.IN6
+freq_base[14] => Add2.IN5
+freq_base[15] => Add2.IN4
+half_num_clk_cycles[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[4] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[5] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[6] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[7] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[8] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[9] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[10] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[11] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[12] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[13] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[14] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+half_num_clk_cycles[15] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simple_ipod_solution|clk_divider:gen_clk_sample
 rst => comb.IN1
 rst => clk_out.OUTPUTSELECT
 half_num_clk_cycles[0] => half_num_clk_cycles[0].IN1
@@ -215,7 +294,7 @@ clk_in => clk_in.IN1
 clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|clk_divider:gen_clk_22khz|counter:clk_counter
+|simple_ipod_solution|clk_divider:gen_clk_sample|counter:clk_counter
 clk => count[0]~reg0.CLK
 clk => count[1]~reg0.CLK
 clk => count[2]~reg0.CLK
@@ -282,7 +361,7 @@ count[14] <= count[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[15] <= count[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|clk_divider:gen_clk_22khz|geq_comparator:clk_comparator
+|simple_ipod_solution|clk_divider:gen_clk_sample|geq_comparator:clk_comparator
 in1[0] => LessThan0.IN16
 in1[1] => LessThan0.IN15
 in1[2] => LessThan0.IN14
@@ -318,34 +397,34 @@ in2[15] => LessThan0.IN17
 out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|synchronizer:sync_clk_22khz
+|simple_ipod_solution|synchronizer:sync_clk_sample
 clk => clk.IN3
 clk_async => clk_async.IN1
 clk_sync <= clk_sync.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|synchronizer:sync_clk_22khz|reg_rst_sync:reg1
+|simple_ipod_solution|synchronizer:sync_clk_sample|reg_rst_sync:reg1
 clk => q[0]~reg0.CLK
 rst => q[0]~reg0.ACLR
 d[0] => q[0]~reg0.DATAIN
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|synchronizer:sync_clk_22khz|reg_rst_sync:reg2
+|simple_ipod_solution|synchronizer:sync_clk_sample|reg_rst_sync:reg2
 clk => q[0]~reg0.CLK
 rst => q[0]~reg0.ACLR
 d[0] => q[0]~reg0.DATAIN
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|synchronizer:sync_clk_22khz|reg_rst_sync:reg3
+|simple_ipod_solution|synchronizer:sync_clk_sample|reg_rst_sync:reg3
 clk => q[0]~reg0.CLK
 rst => q[0]~reg0.ACLR
 d[0] => q[0]~reg0.DATAIN
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|synchronizer:sync_clk_22khz|reg_rst_sync:reg4
+|simple_ipod_solution|synchronizer:sync_clk_sample|reg_rst_sync:reg4
 clk => q[0]~reg0.CLK
 rst => q[0]~reg0.ACLR
 d[0] => q[0]~reg0.DATAIN
@@ -357,38 +436,38 @@ clk => state[0].CLK
 clk => state[1].CLK
 rst => state.OUTPUTSELECT
 rst => state.OUTPUTSELECT
-key[0] => Equal0.IN8
-key[0] => Equal1.IN8
+key[0] => Equal0.IN7
+key[0] => Equal1.IN7
 key[0] => Equal2.IN2
-key[0] => Equal3.IN8
-key[1] => Equal0.IN7
+key[0] => Equal3.IN7
+key[1] => Equal0.IN6
 key[1] => Equal1.IN1
-key[1] => Equal2.IN8
+key[1] => Equal2.IN7
 key[1] => Equal3.IN2
 key[2] => Equal0.IN1
-key[2] => Equal1.IN7
+key[2] => Equal1.IN6
 key[2] => Equal2.IN1
 key[2] => Equal3.IN1
-key[3] => Equal0.IN6
-key[3] => Equal1.IN6
-key[3] => Equal2.IN7
-key[3] => Equal3.IN7
-key[4] => Equal0.IN5
-key[4] => Equal1.IN5
-key[4] => Equal2.IN6
-key[4] => Equal3.IN6
-key[5] => Equal0.IN4
-key[5] => Equal1.IN4
-key[5] => Equal2.IN5
-key[5] => Equal3.IN5
+key[3] => Equal0.IN5
+key[3] => Equal1.IN5
+key[3] => Equal2.IN6
+key[3] => Equal3.IN6
+key[4] => Equal0.IN4
+key[4] => Equal1.IN4
+key[4] => Equal2.IN5
+key[4] => Equal3.IN5
+key[5] => Equal0.IN3
+key[5] => Equal1.IN3
+key[5] => Equal2.IN4
+key[5] => Equal3.IN4
 key[6] => Equal0.IN0
 key[6] => Equal1.IN0
 key[6] => Equal2.IN0
 key[6] => Equal3.IN0
-key[7] => Equal0.IN3
-key[7] => Equal1.IN3
-key[7] => Equal2.IN4
-key[7] => Equal3.IN4
+key[7] => Equal0.IN2
+key[7] => Equal1.IN2
+key[7] => Equal2.IN3
+key[7] => Equal3.IN3
 playpause <= state[0].DB_MAX_OUTPUT_PORT_TYPE
 dir <= state[1].DB_MAX_OUTPUT_PORT_TYPE
 

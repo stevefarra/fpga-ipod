@@ -223,8 +223,9 @@ wire Sample_Clk_Signal;
 // Insert your code for Lab2 here!
 //
 
-wire        clk_22khz_async;
-wire        clk_22khz_sync;
+wire [15:0] half_num_clk_cycles;
+wire        clk_sample_async;
+wire        clk_sample_sync;
 wire        gen_addr;
 wire        data_en;
 
@@ -237,20 +238,24 @@ wire [22:0] flash_mem_address;
 wire [31:0] flash_mem_readdata;
 wire        flash_mem_readdatavalid;
 
-// Debug
-wire        Clock_1Hz_synced;
+freq_ctrl freq_ctrl_inst(
+  .speed_up            (speed_up_event),
+  .speed_down          (speed_down_event),
+  .speed_rst           (speed_reset_event),
+  .freq_base           (16'h2af8),
+  .half_num_clk_cycles (half_num_clk_cycles));
 
-clk_divider gen_clk_22khz(
+clk_divider gen_clk_sample(
   .rst                 (~KEY[3]),
-  .half_num_clk_cycles (16'h8e1),
+  .half_num_clk_cycles (half_num_clk_cycles),
   .clk_in              (CLK_50M),
-  .clk_out             (clk_22khz_async)
+  .clk_out             (clk_sample_async)
 );
 
-synchronizer sync_clk_22khz(
+synchronizer sync_clk_sample(
   .clk       (CLK_50M),
-  .clk_async (clk_22khz_async),
-  .clk_sync  (clk_22khz_sync)
+  .clk_async (clk_sample_async),
+  .clk_sync  (clk_sample_sync)
 );
 
 kbd_fsm kbd_fsm_inst(
@@ -273,7 +278,7 @@ addr_ctrl addr_ctrl_inst(
 flash_fsm flash_fsm_inst(
   .clk           (CLK_50M),
   .rst           (~KEY[3]),
-  .start         (clk_22khz_sync),
+  .start         (clk_sample_sync),
   .readdatavalid (flash_mem_readdatavalid),
   .gen_addr      (gen_addr),
   .read          (flash_mem_read),
@@ -281,17 +286,17 @@ flash_fsm flash_fsm_inst(
 );
 
 flash flash_inst(
-    .clk_clk                 (CLK_50M),
-    .reset_reset_n           (1'b1),
-    .flash_mem_write         (1'b0),
-    .flash_mem_burstcount    (6'b000001),
-    .flash_mem_waitrequest   (flash_mem_waitrequest),
-    .flash_mem_read          (flash_mem_read),
-    .flash_mem_address       (flash_mem_address),
-    .flash_mem_writedata     (32'b0),
-    .flash_mem_readdata      (flash_mem_readdata),
-    .flash_mem_readdatavalid (flash_mem_readdatavalid),
-    .flash_mem_byteenable    (4'b1111)
+  .clk_clk                 (CLK_50M),
+  .reset_reset_n           (1'b1),
+  .flash_mem_write         (1'b0),
+  .flash_mem_burstcount    (6'b000001),
+  .flash_mem_waitrequest   (flash_mem_waitrequest),
+  .flash_mem_read          (flash_mem_read),
+  .flash_mem_address       (flash_mem_address),
+  .flash_mem_writedata     (32'b0),
+  .flash_mem_readdata      (flash_mem_readdata),
+  .flash_mem_readdatavalid (flash_mem_readdatavalid),
+  .flash_mem_byteenable    (4'b1111)
 );
 
 assign Sample_Clk_Signal = Clock_1KHz;

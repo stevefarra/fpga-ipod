@@ -1,6 +1,7 @@
 module addr_ctrl
     (input  logic clk,
      input  logic rst,
+     input  logic en,
      input  logic playpause,
      input  logic dir,
      output logic [22:0] addr);
@@ -8,7 +9,7 @@ module addr_ctrl
     always_ff @(posedge clk) begin
         if (rst) 
             addr = 23'b0;
-        else if (playpause)
+        else if (en && playpause)
             if (dir)
                 if (addr[19:0] == 20'h7FFFF)
                     addr = 23'b0;

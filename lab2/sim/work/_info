@@ -10,15 +10,15 @@ cModel Technology
 dC:/altera/14.1
 vaddr_ctrl
 Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-!s110 1549929919
+!s110 1549933677
 !i10b 1
-!s100 UR3^3@23o@NNBF:^KcB]Q2
-I?og9iZ^SO^mh?;U27hnXc0
+!s100 R5czXPn[YY]51AjREjeCZ1
+IK4iUF<nJARV4H^z2PHm[J1
 Z1 V`JN@9S9cnhjKRR_L]QIcM3
 !s105 addr_ctrl_sv_unit
 S1
 Z2 dC:/Users/stfar/cpen311/lab2/sim
-w1549929913
+w1549932316
 8C:/Users/stfar/cpen311/lab2/src/addr_ctrl.sv
 FC:/Users/stfar/cpen311/lab2/src/addr_ctrl.sv
 L0 1
@@ -26,7 +26,7 @@ Z3 OV;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1549929919.507000
+!s108 1549933677.029000
 !s107 C:/Users/stfar/cpen311/lab2/src/addr_ctrl.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/addr_ctrl.sv|
 !i113 1
@@ -52,6 +52,29 @@ r1
 !s108 1549929923.182000
 !s107 C:/Users/stfar/cpen311/lab2/src/tb/addr_ctrl_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/addr_ctrl_tb.sv|
+!i113 1
+R4
+vaddr_tb
+R0
+!s110 1549934434
+!i10b 1
+!s100 M`Q:Tkl3?HU>UWj`K1VeN1
+Ilac<ECaC1MZV:I@mR`6fn0
+R1
+!s105 addr_tb_sv_unit
+S1
+R2
+w1549934422
+8C:/Users/stfar/cpen311/lab2/src/tb/addr_tb.sv
+FC:/Users/stfar/cpen311/lab2/src/tb/addr_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1549934433.991000
+!s107 C:/Users/stfar/cpen311/lab2/src/tb/addr_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/addr_tb.sv|
 !i113 1
 R4
 vclk_divider
@@ -125,25 +148,25 @@ r1
 R4
 vflash_fsm_tb
 R0
-!s110 1549928644
+!s110 1549933676
 !i10b 1
 !s100 O=za;<AIOieL1Qo5g=c0h1
-I8;X8;2mYl8UQmlj2bMS>]1
+I2]Q]N4;TMfEJX1]^WWkLW0
 R1
 !s105 flash_fsm_tb_sv_unit
 S1
 R2
-w1549912139
-8C:/Users/stfar/cpen311/lab2/src/tb/flash_fsm_tb.sv
-FC:/Users/stfar/cpen311/lab2/src/tb/flash_fsm_tb.sv
+w1549930354
+8C:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv
+FC:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv
 L0 1
 R3
 r1
 !s85 0
 31
-!s108 1549928644.141000
-!s107 C:/Users/stfar/cpen311/lab2/src/tb/flash_fsm_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/flash_fsm_tb.sv|
+!s108 1549933676.904000
+!s107 C:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/flash_fsm_tb.sv|
 !i113 1
 R4
 vgeq_comparator
@@ -167,6 +190,29 @@ r1
 !s108 1549912077.163000
 !s107 C:/Users/stfar/cpen311/lab2/src/geq_comparator.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/geq_comparator.sv|
+!i113 1
+R4
+vkbd_fsm
+R0
+!s110 1549934691
+!i10b 1
+!s100 4ioCQbYgB:In<ck3M8UzX3
+I4n^?FMD`BC`=?1fdPNR_>3
+R1
+!s105 kbd_fsm_sv_unit
+S1
+R2
+w1549934683
+8C:/Users/stfar/cpen311/lab2/src/kbd_fsm.sv
+FC:/Users/stfar/cpen311/lab2/src/kbd_fsm.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1549934691.751000
+!s107 C:/Users/stfar/cpen311/lab2/src/kbd_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/kbd_fsm.sv|
 !i113 1
 R4
 vreg_rst_sync

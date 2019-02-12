@@ -228,6 +228,9 @@ wire        clk_22khz_sync;
 wire        gen_addr;
 wire        data_en;
 
+wire        playpause;
+wire        dir;
+
 wire        flash_mem_read;
 wire        flash_mem_waitrequest;
 wire [22:0] flash_mem_address;
@@ -236,7 +239,6 @@ wire        flash_mem_readdatavalid;
 
 // Debug
 wire        Clock_1Hz_synced;
-
 
 clk_divider gen_clk_22khz(
   .rst                 (~KEY[3]),
@@ -251,6 +253,23 @@ synchronizer sync_clk_22khz(
   .clk_sync  (clk_22khz_sync)
 );
 
+kbd_fsm kbd_fsm_inst(
+  .clk       (CLK_50M),
+  .rst       (~KEY[3]),
+  .key       (kbd_received_ascii_code),
+  .playpause (playpause),
+  .dir       (dir)
+);
+
+addr_ctrl addr_ctrl_inst(
+  .clk       (CLK_50M),
+  .rst       (~KEY[3]),
+  .en        (gen_addr),
+  .playpause (playpause),
+  .dir       (dir),
+  .addr      (flash_mem_address)
+);
+
 flash_fsm flash_fsm_inst(
   .clk           (CLK_50M),
   .rst           (~KEY[3]),
@@ -259,13 +278,6 @@ flash_fsm flash_fsm_inst(
   .gen_addr      (gen_addr),
   .read          (flash_mem_read),
   .data_en       (data_en)
-);
-
-counter #(23) addr_ctrl(
-  .clk   (CLK_50M),
-  .en    (gen_addr),
-  .rst   (~KEY[3]),
-  .count (flash_mem_address)
 );
 
 flash flash_inst(

@@ -33,6 +33,13 @@ Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
 Top level modules:
 	synchronizer_tb
 
+} {} {}} C:/Users/stfar/cpen311/lab2/src/tb/addr_ctrl_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/tb/addr_ctrl_tb.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module addr_ctrl_tb
+
+Top level modules:
+	addr_ctrl_tb
+
 } {} {}} C:/Users/stfar/cpen311/lab2/src/tb/flash_fsm_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/tb/flash_fsm_tb.sv
 Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
 -- Compiling module flash_fsm_tb

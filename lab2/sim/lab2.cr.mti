@@ -19,6 +19,13 @@ Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
 Top level modules:
 	addr_ctrl
 
+} {} {}} C:/Users/stfar/cpen311/lab2/src/counter.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/counter.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module counter
+
+Top level modules:
+	counter
+
 } {} {}} C:/Users/stfar/cpen311/lab2/src/clk_divider.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/clk_divider.sv
 Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
 -- Compiling module clk_divider
@@ -26,12 +33,12 @@ Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
 Top level modules:
 	clk_divider
 
-} {} {}} C:/Users/stfar/cpen311/lab2/src/counter.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/counter.sv
+} {} {}} C:/Users/stfar/cpen311/lab2/src/freq_ctrl.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/freq_ctrl.sv
 Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
--- Compiling module counter
+-- Compiling module freq_ctrl
 
 Top level modules:
-	counter
+	freq_ctrl
 
 } {} {}} C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv
 Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
@@ -54,19 +61,19 @@ Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
 Top level modules:
 	flash_fsm_tb
 
-} {} {}} C:/Users/stfar/cpen311/lab2/src/synchronizer.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/synchronizer.sv
-Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
--- Compiling module synchronizer
-
-Top level modules:
-	synchronizer
-
 } {} {}} C:/Users/stfar/cpen311/lab2/src/kbd_fsm.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/kbd_fsm.sv
 Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
 -- Compiling module kbd_fsm
 
 Top level modules:
 	kbd_fsm
+
+} {} {}} C:/Users/stfar/cpen311/lab2/src/synchronizer.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/synchronizer.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module synchronizer
+
+Top level modules:
+	synchronizer
 
 } {} {}} C:/Users/stfar/cpen311/lab2/src/tb/synchronizer_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/stfar/cpen311/lab2/src/tb/synchronizer_tb.sv
 Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014

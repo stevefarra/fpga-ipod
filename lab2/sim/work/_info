@@ -10,7 +10,7 @@ cModel Technology
 dC:/altera/14.1
 vaddr_ctrl
 Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-Z1 !s110 1549955673
+Z1 !s110 1549960901
 !i10b 1
 !s100 R5czXPn[YY]51AjREjeCZ1
 IK4iUF<nJARV4H^z2PHm[J1
@@ -26,7 +26,7 @@ Z4 OV;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1549955673.629000
+!s108 1549960901.396000
 !s107 C:/Users/stfar/cpen311/lab2/src/addr_ctrl.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/addr_ctrl.sv|
 !i113 1
@@ -56,7 +56,7 @@ r1
 R5
 vaddr_tb
 R0
-Z6 !s110 1549955674
+Z6 !s110 1549960902
 !i10b 1
 !s100 M`Q:Tkl3?HU>UWj`K1VeN1
 Ilac<ECaC1MZV:I@mR`6fn0
@@ -72,7 +72,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549955674.830000
+!s108 1549960902.350000
 !s107 C:/Users/stfar/cpen311/lab2/src/tb/addr_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/addr_tb.sv|
 !i113 1
@@ -95,7 +95,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549955673.738000
+!s108 1549960901.521000
 !s107 C:/Users/stfar/cpen311/lab2/src/clk_divider.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/clk_divider.sv|
 !i113 1
@@ -118,14 +118,14 @@ R4
 r1
 !s85 0
 31
-!s108 1549955673.858000
+!s108 1549960901.632000
 !s107 C:/Users/stfar/cpen311/lab2/src/counter.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/counter.sv|
 !i113 1
 R5
 vflash_fsm
 R0
-R6
+R1
 !i10b 1
 !s100 jDg0QYI9HgX3[gMkazHzO0
 IEbiT5bQcbohoWWUDN<Q:70
@@ -141,7 +141,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549955674.009000
+!s108 1549960901.757000
 !s107 C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv|
 !i113 1
@@ -164,22 +164,22 @@ R4
 r1
 !s85 0
 31
-!s108 1549955674.939000
+!s108 1549960902.475000
 !s107 C:/Users/stfar/cpen311/lab2/src/tb/flash_fsm_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/flash_fsm_tb.sv|
 !i113 1
 R5
 vfreq_ctrl
 R0
-R6
+R1
 !i10b 1
-!s100 g`Ol8gWEXT^A>QaYf=NkJ2
-IFHVUGD4Ze]XhIgKU0Yz>61
+!s100 `_0L70G6LHPS7k>F0YiQ80
+I;UZ]ak0>^e2zF?T]SkHm91
 R2
 !s105 freq_ctrl_sv_unit
 S1
 R3
-w1549955664
+w1549957199
 8C:/Users/stfar/cpen311/lab2/src/freq_ctrl.sv
 FC:/Users/stfar/cpen311/lab2/src/freq_ctrl.sv
 L0 1
@@ -187,14 +187,14 @@ R4
 r1
 !s85 0
 31
-!s108 1549955674.374000
+!s108 1549960901.882000
 !s107 C:/Users/stfar/cpen311/lab2/src/freq_ctrl.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/freq_ctrl.sv|
 !i113 1
 R5
 vfreq_ctrl_tb
 R0
-Z7 !s110 1549955675
+R6
 !i10b 1
 !s100 M^5@5d]I3LIK@Vl6QEiRG1
 I3d`KRT5LESV`Y3bG7]@D92
@@ -210,7 +210,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549955675.095000
+!s108 1549960902.585000
 !s107 C:/Users/stfar/cpen311/lab2/src/tb/freq_ctrl_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/freq_ctrl_tb.sv|
 !i113 1
@@ -233,7 +233,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549955674.484000
+!s108 1549960902.007000
 !s107 C:/Users/stfar/cpen311/lab2/src/geq_comparator.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/geq_comparator.sv|
 !i113 1
@@ -256,7 +256,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549955674.596000
+!s108 1549960902.116000
 !s107 C:/Users/stfar/cpen311/lab2/src/kbd_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/kbd_fsm.sv|
 !i113 1
@@ -279,7 +279,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549955674.721000
+!s108 1549960902.241000
 !s107 C:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv|
 !i113 1
@@ -302,14 +302,14 @@ R4
 r1
 !s85 0
 31
-!s108 1549955673.488000
+!s108 1549960901.240000
 !s107 C:/Users/stfar/cpen311/lab2/src/synchronizer.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/synchronizer.sv|
 !i113 1
 R5
 vsynchronizer_tb
 R0
-R7
+R6
 !i10b 1
 !s100 ?kKg4Rnb2ZQFYU`7JJg2L1
 IAbH@:l6hXPlBzRU<i4iTh1
@@ -325,7 +325,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549955675.501000
+!s108 1549960902.710000
 !s107 C:/Users/stfar/cpen311/lab2/src/tb/synchronizer_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/synchronizer_tb.sv|
 !i113 1

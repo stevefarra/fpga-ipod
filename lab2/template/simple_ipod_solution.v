@@ -307,6 +307,59 @@ always @(posedge CLK_50M)
   if (data_en)
     audio_data = flash_mem_address[0] ? flash_mem_readdata[31:16] : flash_mem_readdata[15:0];
 
+//=======================================================================================================================
+//
+// Lab 3 code
+//
+//
+
+// Pacoblaze I/O & ROM signals
+wire [9:0]  address;
+wire [17:0] instruction;
+wire [7:0]  port_id;
+wire [7:0]  out_port;
+reg  [7:0]  in_port;
+wire        write_strobe;
+wire        read_strobe;
+reg         interrupt;
+wire        interrupt_ack;
+
+// Interrupt signals
+reg [26:0] int_count;
+reg        event_1hz;
+
+// LCD operation signals
+reg       lcd_rw_control;
+reg [7:0] lcd_output_data;
+
+wire [19:0] raw_instruction;
+
+always @(posedge CLK_50M)
+  instruction <= raw_instruction[17:0];
+
+pacoblaze_instruction_memory pacoblaze_instruction_memory_inst(
+  .addr    (address),
+  .outdata (raw_instruction)
+);
+
+pacoblaze3 pacoblaze3_inst(
+  .address       (address),
+  .instruction   (instruction),
+  .port_id       (port_id),
+  .write_strobe  (write_strobe),
+  .out_port      (out_port),
+  .read_strobe   (read_strobe),
+  .in_port       (in_port),
+  .interrupt     (interrupt),
+  .interrupt_ack (interrupt_ack),
+  .reset         (1'b0),
+  .clk           (CLK_50M)
+);
+
+always @(posedge CLK_50M)
+  if (write_strobe && port_id[0])
+    LED[0] = out_port[0];
+
 //======================================================================================
 // 
 // Keyboard Interface

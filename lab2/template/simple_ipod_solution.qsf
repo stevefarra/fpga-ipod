@@ -1592,7 +1592,10 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_global_assignment -name SYSTEMVERILOG_FILE ../src/synchronizer.sv
+set_global_assignment -name SEARCH_PATH "c:\\users\\stfar\\cpen311\\lab2\\template\\pacoblaze"
+set_global_assignment -name SEARCH_PATH .
+set_global_assignment -name SEARCH_PATH "c:\\my_labs\\simple_ipod_w_keyboard_and_scope\\pacoblaze"
+set_global_assignment -name SYSTEMVERILOG_FILE ../src/clk_synchronizer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../src/reg_rst_sync.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../src/kbd_fsm.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../src/geq_comparator.sv
@@ -1614,8 +1617,5 @@ set_global_assignment -name QXP_FILE async_trap_and_reset_gen_1_pulse.qxp
 set_global_assignment -name QXP_FILE async_trap_and_reset.qxp
 set_global_assignment -name SDC_FILE timing_constraints.sdc
 set_global_assignment -name VERILOG_FILE simple_ipod_solution.v
-set_global_assignment -name SEARCH_PATH "c:\\users\\stfar\\cpen311\\lab2\\template\\pacoblaze"
-set_global_assignment -name SEARCH_PATH .
-set_global_assignment -name SEARCH_PATH "c:\\my_labs\\simple_ipod_w_keyboard_and_scope\\pacoblaze"
 set_global_assignment -name SLD_FILE db/lcd_scope_auto_stripped.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

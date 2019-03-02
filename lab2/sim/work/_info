@@ -10,7 +10,7 @@ cModel Technology
 dC:/altera/14.1
 vaddr_ctrl
 Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-Z1 !s110 1549960901
+Z1 !s110 1551484021
 !i10b 1
 !s100 R5czXPn[YY]51AjREjeCZ1
 IK4iUF<nJARV4H^z2PHm[J1
@@ -26,7 +26,7 @@ Z4 OV;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1549960901.396000
+!s108 1551484021.302000
 !s107 C:/Users/stfar/cpen311/lab2/src/addr_ctrl.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/addr_ctrl.sv|
 !i113 1
@@ -56,7 +56,7 @@ r1
 R5
 vaddr_tb
 R0
-Z6 !s110 1549960902
+Z6 !s110 1551484022
 !i10b 1
 !s100 M`Q:Tkl3?HU>UWj`K1VeN1
 Ilac<ECaC1MZV:I@mR`6fn0
@@ -72,7 +72,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549960902.350000
+!s108 1551484022.247000
 !s107 C:/Users/stfar/cpen311/lab2/src/tb/addr_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/addr_tb.sv|
 !i113 1
@@ -95,9 +95,55 @@ R4
 r1
 !s85 0
 31
-!s108 1549960901.521000
+!s108 1551484021.420000
 !s107 C:/Users/stfar/cpen311/lab2/src/clk_divider.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/clk_divider.sv|
+!i113 1
+R5
+vclk_synchronizer
+R0
+Z7 !s110 1551486070
+!i10b 1
+!s100 EN8zLFO:3h2olI4oIl:8?3
+I@>_XHL3eFonEa?5@Cbm_m3
+R2
+!s105 clk_synchronizer_sv_unit
+S1
+R3
+w1551485950
+8C:/Users/stfar/cpen311/lab2/src/clk_synchronizer.sv
+FC:/Users/stfar/cpen311/lab2/src/clk_synchronizer.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1551486070.805000
+!s107 C:/Users/stfar/cpen311/lab2/src/clk_synchronizer.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/clk_synchronizer.sv|
+!i113 1
+R5
+vclk_synchronizer_tb
+R0
+R7
+!i10b 1
+!s100 JG02F:nVHTGVFdUV6M=Rf1
+Ibl`IFH:MEN29ieLeja=]=3
+R2
+!s105 clk_synchronizer_tb_sv_unit
+S1
+R3
+w1551485956
+8C:/Users/stfar/cpen311/lab2/src/tb/clk_synchronizer_tb.sv
+FC:/Users/stfar/cpen311/lab2/src/tb/clk_synchronizer_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1551486070.923000
+!s107 C:/Users/stfar/cpen311/lab2/src/tb/clk_synchronizer_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/clk_synchronizer_tb.sv|
 !i113 1
 R5
 vcounter
@@ -118,7 +164,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549960901.632000
+!s108 1551484021.538000
 !s107 C:/Users/stfar/cpen311/lab2/src/counter.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/counter.sv|
 !i113 1
@@ -141,7 +187,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549960901.757000
+!s108 1551484021.658000
 !s107 C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/flash_fsm.sv|
 !i113 1
@@ -164,7 +210,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549960902.475000
+!s108 1551484022.363000
 !s107 C:/Users/stfar/cpen311/lab2/src/tb/flash_fsm_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/flash_fsm_tb.sv|
 !i113 1
@@ -187,7 +233,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549960901.882000
+!s108 1551484021.786000
 !s107 C:/Users/stfar/cpen311/lab2/src/freq_ctrl.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/freq_ctrl.sv|
 !i113 1
@@ -210,14 +256,14 @@ R4
 r1
 !s85 0
 31
-!s108 1549960902.585000
+!s108 1551484022.478000
 !s107 C:/Users/stfar/cpen311/lab2/src/tb/freq_ctrl_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/freq_ctrl_tb.sv|
 !i113 1
 R5
 vgeq_comparator
 R0
-R6
+R1
 !i10b 1
 !s100 DOoH[hcSlh8VAQhC`MXj33
 I6kVSVkEG5`0hF0jia34HS3
@@ -233,9 +279,55 @@ R4
 r1
 !s85 0
 31
-!s108 1549960902.007000
+!s108 1551484021.904000
 !s107 C:/Users/stfar/cpen311/lab2/src/geq_comparator.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/geq_comparator.sv|
+!i113 1
+R5
+vhold_pulse_extra_clk_cycle
+R0
+!s110 1551484536
+!i10b 1
+!s100 _<LP_DFGQODCiTPXn7Mjd2
+IXXHjX_SEJ]>8e>_4oiJJ33
+R2
+!s105 hold_pulse_extra_clk_cycle_sv_unit
+S1
+R3
+w1551484348
+8C:/Users/stfar/cpen311/lab2/src/hold_pulse_extra_clk_cycle.sv
+FC:/Users/stfar/cpen311/lab2/src/hold_pulse_extra_clk_cycle.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1551484536.071000
+!s107 C:/Users/stfar/cpen311/lab2/src/hold_pulse_extra_clk_cycle.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/hold_pulse_extra_clk_cycle.sv|
+!i113 1
+R5
+vhold_pulse_extra_clk_cycle_tb
+R0
+R6
+!i10b 1
+!s100 ]ilHF?XZJE:5BS1KLMVC62
+I4SIj0D4MeK@NFbWI]9_m21
+R2
+!s105 hold_pulse_extra_clk_cycle_tb_sv_unit
+S1
+R3
+w1551483899
+8C:/Users/stfar/cpen311/lab2/src/tb/hold_pulse_extra_clk_cycle_tb.sv
+FC:/Users/stfar/cpen311/lab2/src/tb/hold_pulse_extra_clk_cycle_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1551484022.829000
+!s107 C:/Users/stfar/cpen311/lab2/src/tb/hold_pulse_extra_clk_cycle_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/hold_pulse_extra_clk_cycle_tb.sv|
 !i113 1
 R5
 vkbd_fsm
@@ -256,7 +348,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549960902.116000
+!s108 1551484022.032000
 !s107 C:/Users/stfar/cpen311/lab2/src/kbd_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/kbd_fsm.sv|
 !i113 1
@@ -279,7 +371,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549960902.241000
+!s108 1551484022.147000
 !s107 C:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/reg_rst_sync.sv|
 !i113 1
@@ -302,7 +394,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549960901.240000
+!s108 1551484021.191000
 !s107 C:/Users/stfar/cpen311/lab2/src/synchronizer.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/synchronizer.sv|
 !i113 1
@@ -325,7 +417,7 @@ R4
 r1
 !s85 0
 31
-!s108 1549960902.710000
+!s108 1551484022.599000
 !s107 C:/Users/stfar/cpen311/lab2/src/tb/synchronizer_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/stfar/cpen311/lab2/src/tb/synchronizer_tb.sv|
 !i113 1

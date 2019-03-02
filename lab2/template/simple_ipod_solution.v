@@ -123,9 +123,9 @@ output                      DRAM_WE_N;
 //=======================================================
 // Input and output declarations
 logic CLK_50M;
-logic  [7:0] LED;
+logic  [9:0] LED;
 assign CLK_50M =  CLOCK_50;
-assign LEDR[7:0] = LED[7:0];
+assign LEDR[9:0] = LED[9:0];
 
 //Character definitions
 
@@ -252,7 +252,7 @@ clk_divider gen_clk_sample(
   .clk_out             (clk_sample_async)
 );
 
-synchronizer sync_clk_sample(
+clk_synchronizer sync_clk_sample(
   .clk       (CLK_50M),
   .clk_async (clk_sample_async),
   .clk_sync  (clk_sample_sync)
@@ -356,9 +356,22 @@ pacoblaze3 pacoblaze3_inst(
   .clk           (CLK_50M)
 );
 
+// Blinking LED toggle
 always @(posedge CLK_50M)
   if (write_strobe && port_id[0])
     LED[0] = out_port[0];
+
+// Interrupt register
+always @(posedge CLK_50M)
+  if      (interrupt_ack) interrupt = 1'b0;
+  else if (data_en)       interrupt = 1'b1;
+
+assign in_port = audio_data;
+
+// Filtering LED toggle
+always @(posedge CLK_50M)
+  if (write_strobe && port_id[2])
+    LED[9:2] = out_port;
 
 //======================================================================================
 // 

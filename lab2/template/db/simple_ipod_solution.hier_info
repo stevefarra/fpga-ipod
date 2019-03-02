@@ -2,14 +2,14 @@
 CLOCK_50 => CLK_50M.IN23
 LEDR[0] <= LED[0].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[1] <= <GND>
-LEDR[2] <= <GND>
-LEDR[3] <= <GND>
-LEDR[4] <= <GND>
-LEDR[5] <= <GND>
-LEDR[6] <= <GND>
-LEDR[7] <= <GND>
-LEDR[8] <= <GND>
-LEDR[9] <= <GND>
+LEDR[2] <= LED[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= LED[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= LED[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= LED[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= LED[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= LED[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= LED[8].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= LED[9].DB_MAX_OUTPUT_PORT_TYPE
 KEY[0] => _.IN1
 KEY[1] => _.IN1
 KEY[2] => _.IN1
@@ -397,34 +397,34 @@ in2[15] => LessThan0.IN17
 out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|synchronizer:sync_clk_sample
+|simple_ipod_solution|clk_synchronizer:sync_clk_sample
 clk => clk.IN3
 clk_async => clk_async.IN1
 clk_sync <= clk_sync.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|synchronizer:sync_clk_sample|reg_rst_sync:reg1
+|simple_ipod_solution|clk_synchronizer:sync_clk_sample|reg_rst_sync:reg1
 clk => q[0]~reg0.CLK
 rst => q[0]~reg0.ACLR
 d[0] => q[0]~reg0.DATAIN
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|synchronizer:sync_clk_sample|reg_rst_sync:reg2
+|simple_ipod_solution|clk_synchronizer:sync_clk_sample|reg_rst_sync:reg2
 clk => q[0]~reg0.CLK
 rst => q[0]~reg0.ACLR
 d[0] => q[0]~reg0.DATAIN
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|synchronizer:sync_clk_sample|reg_rst_sync:reg3
+|simple_ipod_solution|clk_synchronizer:sync_clk_sample|reg_rst_sync:reg3
 clk => q[0]~reg0.CLK
 rst => q[0]~reg0.ACLR
 d[0] => q[0]~reg0.DATAIN
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|simple_ipod_solution|synchronizer:sync_clk_sample|reg_rst_sync:reg4
+|simple_ipod_solution|clk_synchronizer:sync_clk_sample|reg_rst_sync:reg4
 clk => q[0]~reg0.CLK
 rst => q[0]~reg0.ACLR
 d[0] => q[0]~reg0.DATAIN
@@ -780,6 +780,9 @@ addr[0] => Mux11.IN1033
 addr[0] => Mux12.IN1033
 addr[0] => Mux13.IN1033
 addr[0] => Mux14.IN1033
+addr[0] => Mux15.IN1033
+addr[0] => Mux16.IN1033
+addr[0] => Mux17.IN1033
 addr[1] => Mux0.IN1032
 addr[1] => Mux1.IN1032
 addr[1] => Mux2.IN1032
@@ -795,6 +798,9 @@ addr[1] => Mux11.IN1032
 addr[1] => Mux12.IN1032
 addr[1] => Mux13.IN1032
 addr[1] => Mux14.IN1032
+addr[1] => Mux15.IN1032
+addr[1] => Mux16.IN1032
+addr[1] => Mux17.IN1032
 addr[2] => Mux0.IN1031
 addr[2] => Mux1.IN1031
 addr[2] => Mux2.IN1031
@@ -810,6 +816,9 @@ addr[2] => Mux11.IN1031
 addr[2] => Mux12.IN1031
 addr[2] => Mux13.IN1031
 addr[2] => Mux14.IN1031
+addr[2] => Mux15.IN1031
+addr[2] => Mux16.IN1031
+addr[2] => Mux17.IN1031
 addr[3] => Mux0.IN1030
 addr[3] => Mux1.IN1030
 addr[3] => Mux2.IN1030
@@ -825,6 +834,9 @@ addr[3] => Mux11.IN1030
 addr[3] => Mux12.IN1030
 addr[3] => Mux13.IN1030
 addr[3] => Mux14.IN1030
+addr[3] => Mux15.IN1030
+addr[3] => Mux16.IN1030
+addr[3] => Mux17.IN1030
 addr[4] => Mux0.IN1029
 addr[4] => Mux1.IN1029
 addr[4] => Mux2.IN1029
@@ -840,6 +852,9 @@ addr[4] => Mux11.IN1029
 addr[4] => Mux12.IN1029
 addr[4] => Mux13.IN1029
 addr[4] => Mux14.IN1029
+addr[4] => Mux15.IN1029
+addr[4] => Mux16.IN1029
+addr[4] => Mux17.IN1029
 addr[5] => Mux0.IN1028
 addr[5] => Mux1.IN1028
 addr[5] => Mux2.IN1028
@@ -855,6 +870,9 @@ addr[5] => Mux11.IN1028
 addr[5] => Mux12.IN1028
 addr[5] => Mux13.IN1028
 addr[5] => Mux14.IN1028
+addr[5] => Mux15.IN1028
+addr[5] => Mux16.IN1028
+addr[5] => Mux17.IN1028
 addr[6] => Mux0.IN1027
 addr[6] => Mux1.IN1027
 addr[6] => Mux2.IN1027
@@ -870,6 +888,9 @@ addr[6] => Mux11.IN1027
 addr[6] => Mux12.IN1027
 addr[6] => Mux13.IN1027
 addr[6] => Mux14.IN1027
+addr[6] => Mux15.IN1027
+addr[6] => Mux16.IN1027
+addr[6] => Mux17.IN1027
 addr[7] => Mux0.IN1026
 addr[7] => Mux1.IN1026
 addr[7] => Mux2.IN1026
@@ -885,6 +906,9 @@ addr[7] => Mux11.IN1026
 addr[7] => Mux12.IN1026
 addr[7] => Mux13.IN1026
 addr[7] => Mux14.IN1026
+addr[7] => Mux15.IN1026
+addr[7] => Mux16.IN1026
+addr[7] => Mux17.IN1026
 addr[8] => Mux0.IN1025
 addr[8] => Mux1.IN1025
 addr[8] => Mux2.IN1025
@@ -900,6 +924,9 @@ addr[8] => Mux11.IN1025
 addr[8] => Mux12.IN1025
 addr[8] => Mux13.IN1025
 addr[8] => Mux14.IN1025
+addr[8] => Mux15.IN1025
+addr[8] => Mux16.IN1025
+addr[8] => Mux17.IN1025
 addr[9] => Mux0.IN1024
 addr[9] => Mux1.IN1024
 addr[9] => Mux2.IN1024
@@ -915,18 +942,21 @@ addr[9] => Mux11.IN1024
 addr[9] => Mux12.IN1024
 addr[9] => Mux13.IN1024
 addr[9] => Mux14.IN1024
-outdata[0] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
-outdata[1] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
-outdata[2] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
-outdata[3] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
-outdata[4] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
-outdata[5] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
-outdata[6] <= <GND>
-outdata[7] <= <GND>
-outdata[8] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
-outdata[9] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
-outdata[10] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-outdata[11] <= <GND>
+addr[9] => Mux15.IN1024
+addr[9] => Mux16.IN1024
+addr[9] => Mux17.IN1024
+outdata[0] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+outdata[1] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+outdata[2] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+outdata[3] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+outdata[4] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+outdata[5] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+outdata[6] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+outdata[7] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+outdata[8] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+outdata[9] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+outdata[10] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+outdata[11] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
 outdata[12] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
 outdata[13] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
 outdata[14] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE

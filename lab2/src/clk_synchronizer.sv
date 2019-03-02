@@ -1,4 +1,4 @@
-module synchronizer
+module clk_synchronizer
     (input  logic clk,
      input  logic clk_async,
      output logic clk_sync);

@@ -16,13 +16,15 @@
 
     CONSTANT delay_1us_constant, 0B
 
-    CONSTANT             PORT_A, 01
-    CONSTANT             PORT_B, 02
-    CONSTANT             PORT_C, 04
+    CONSTANT PORT_A, 01
+    CONSTANT PORT_B, 02
+    CONSTANT PORT_C, 04
 
 ;**************************************************************************************
 ; Main function
 ;**************************************************************************************
+
+; Initialize registers used in main & ISR
 
     main: LOAD   s6, 00 ; Filtering counter
           LOAD   s7, 00 ; Filtering LSBs register
@@ -30,6 +32,9 @@
           ENABLE INTERRUPT
           LOAD   s5, 00 ; LED register
     
+; Toggles an LED every second
+; Register used: s5
+
     toggle_led: XOR s5, 01
                 OUTPUT s5, PORT_A
                 CALL delay_1s
@@ -39,7 +44,7 @@
 ; Software delay routines
 ;**************************************************************************************
 
-; Delay of 1us.
+; Delay of 1us
 ; Registers used: s0
     
     delay_1us: LOAD s0, delay_1us_constant
@@ -47,7 +52,7 @@
                JUMP NZ, wait_1us
                RETURN
                     
-; Delay of 40us.
+; Delay of 40us
 ; Registers used: s0, s1
         
     delay_40us: LOAD s1, 28                        ; 40 x 1us = 40us
@@ -56,7 +61,7 @@
                 JUMP NZ, wait_40us
                 RETURN
                 
-; Delay of 1ms.
+; Delay of 1ms
 ; Registers used: s0, s1, s2
 
     delay_1ms: LOAD s2, 19                         ; 25 x 40us = 1ms
@@ -65,7 +70,7 @@
                JUMP NZ, wait_1ms
                RETURN
 
-; Delay of 20ms.
+; Delay of 20ms
 ; Registers used: s0, s1, s2, s3
                 
     delay_20ms: LOAD s3, 14                        ; 20 x 1ms = 20ms
@@ -74,7 +79,7 @@
                 JUMP NZ, wait_20ms
                 RETURN
 
-; Delay of approximately 1 second.
+; Delay of approximately 1 second
 ; Registers used: s0, s1, s2, s3, s4
 
     delay_1s: LOAD s4, 32                         ; 50 x 20ms = 1000ms
@@ -87,25 +92,28 @@
 ; Interrupt Service Routine (ISR)
 ;**************************************************************************************
 
-            ISR: INPUT s9, PORT_B   ; Read in audio data
-                 TEST s9, 80        ; Check if MSB of audio data is 0
-                 JUMP Z, skip_norm  ; If true, number is positive and no need to normalize 
+; Outputs a byte-sized strength meter
+; Registers used: s6, s7, s8, s9
+
+            ISR: INPUT s9, PORT_B    ; Read in audio data
+                 TEST s9, 80         ; Check if MSB of audio data is 0
+                 JUMP Z, skip_norm   ; If true, number is positive and no need to normalize 
  
-                 SUB s9, 01         ; Else, normalize
-                 XOR s9, FF
+                 SUB s9, 01          ; Normalize: subtract 1
+                 XOR s9, FF          ; Normalize: compliment bits
 
-      skip_norm: ADD s7, s9         ; Add audio data to LSBs register
-                 ADDCY s8, 00       ; If there is overflow (i.e. carry bit is set), increment MSBs register
-                 ADD s6, 01         ; Increment the sum counter
-                 JUMP NC, skip_calc ; If 256 vals not yet summed, then carry bit not set and no need to divide sum
+      skip_norm: ADD s7, s9          ; Add audio data to LSBs register
+                 ADDCY s8, 00        ; If there is overflow (i.e. carry bit is set), increment MSBs register
+                 ADD s6, 01          ; Increment the sum counter
+                 JUMP NC, skip_calc  ; If 256 vals have not yet been summed, then carry bit not set and no need to take the average
 
-     count_ones: ADD s6, 01
-                 SR0 s8
-                 JUMP NZ, count_ones
+     count_ones: ADD s6, 01          ; Increment the shift counter
+                 SR0 s8              ; Shift the average value
+                 JUMP NZ, count_ones ; If the whole number has not yet been shifted, keep shifting
 
-     shift_ones: SR1 s8
-                 SUB s6, 01
-                 JUMP NZ, shift_ones
+     shift_ones: SR1 s8              ; Insert a one in the MSB
+                 SUB s6, 01          ; Decrement the shift counter
+                 JUMP NZ, shift_ones ; If the counter is non-zero, keep shifting
 
                  OUTPUT s8, PORT_C
                  LOAD s6, 00

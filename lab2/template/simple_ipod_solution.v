@@ -222,6 +222,7 @@ wire Sample_Clk_Signal;
 //
 // Insert your code for Lab2 here!
 //
+//
 
 wire [15:0] half_num_clk_cycles;
 wire        clk_sample_async;
@@ -239,6 +240,7 @@ wire [31:0] flash_mem_readdata;
 wire        flash_mem_readdatavalid;
 
 freq_ctrl freq_ctrl_inst(
+  .clk                 (CLK_50M),
   .speed_up            (speed_up_event),
   .speed_down          (speed_down_event),
   .speed_rst           (speed_reset_event),

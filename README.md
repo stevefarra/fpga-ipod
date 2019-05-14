@@ -7,9 +7,9 @@ Playing the song in the forward and reverse directions is toggled with the `F` a
 `R` is used to restart the music player. 
 Finally, he song is sped up and slowed down with the `KEY1` and `KEY0` buttons on the DE1.
 The LEDs are also used as a volume indicator.
-<p align="center">
+
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/31jtuOLA0xw/0.jpg)](https://www.youtube.com/watch?v=31jtuOLA0xw)
-</p>
+
 
 ## Implementation
 The flash memory is interfaced with a finite state machine, `flash_fsm`. By default, `flash_fsm` reads from memory at a frequency of 22 kHz and increments the address being read from every time, so that audio samples are output sequentially and the song plays in the forward direction. 
@@ -19,9 +19,9 @@ When a request to speed up, slow down, or reset the speed is asserted, the `freq
 Meanwhile, requests asserted via keyboard are decoded by the `kbd_fsm` module, and the address being read from is either incremented, decremented, or held depending on whether the request is to play forward, play in reverse, or pause, respectively.
 
 The volume indicator is controlled by a PicoBlaze microprocessor, which takes the audio data as input and outputs directly to the LEDs on the DE1-SoC (not shown in schematic; `simple_ipod_solution.v` for more details).
-<p align="center">
+
   <img src="https://i.imgur.com/Ms2Js9M.png" width=500>
-</p>
+
 
 ## Credits
 Credit is due to Yair Linn for providing the source files contained in `bin` and `template`. All other files in `src` and `tb` were written independently by me.

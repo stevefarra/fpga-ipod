@@ -14,7 +14,7 @@ When a request to speed up, slow down, or reset the speed is asserted, the `freq
 
 Meanwhile, requests asserted via keyboard are decoded by the `kbd_fsm` module, and the address being read from is either incremented, decremented, or held depending on whether the request is to play forward, play in reverse, or pause, respectively.
 
-The volume indicator is controlled by a PicoBlaze microprocessor, which takes the audio data as input and outputs directly to the LEDs on the DE1-SoC (not shown in schematic; `see simple_ipod_solution.v` for more details).
+The volume indicator is controlled by a PicoBlaze microprocessor, which takes the audio data as input and outputs directly to the LEDs on the DE1-SoC (not shown in schematic; `simple_ipod_solution.v` for more details).
 <p align="center">
   <img src="https://i.imgur.com/Ms2Js9M.png" width=500>
 </p>

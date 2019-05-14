@@ -22,3 +22,6 @@ The volume indicator is controlled by a PicoBlaze microprocessor, which takes th
 ## Demonstration
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/31jtuOLA0xw/0.jpg)](https://www.youtube.com/watch?v=31jtuOLA0xw)
+
+## Credits
+Credit is due to Yair Linn for providing the source files contained in `bin` and `template`. All other files in `src` and `tb` were written independently by me.

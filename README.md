@@ -21,5 +21,6 @@ Meanwhile, requests asserted via keyboard are decoded by the `kbd_fsm` module, a
 The volume indicator is controlled by a PicoBlaze microprocessor, which takes the audio data as input and outputs directly to the LEDs on the DE1-SoC (not shown in schematic; `simple_ipod_solution.v` for more details).
 
 <img src="https://i.imgur.com/Ms2Js9M.png" width=500>
+
 ## Credits
 Credit is due to Yair Linn for providing the source files contained in `bin` and `template`. All other files in `src` and `tb` were written independently by me.

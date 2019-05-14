@@ -7,6 +7,7 @@ Playing the song in the forward and reverse directions is toggled with the `F` a
 `R` is used to restart the music player. 
 Finally, he song is sped up and slowed down with the `KEY1` and `KEY0` buttons on the DE1.
 The LEDs are also used as a volume indicator.
+
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/31jtuOLA0xw/0.jpg)](https://www.youtube.com/watch?v=31jtuOLA0xw)
 
 ## Implementation

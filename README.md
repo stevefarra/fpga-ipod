@@ -23,4 +23,4 @@ The volume indicator is controlled by a PicoBlaze microprocessor, which takes th
 <img src="https://i.imgur.com/Ms2Js9M.png" width=500>
 
 ## Credits
-Credit is due to Yair Linn for providing the source files contained in `bin` and `template`. All other files in `src` and `tb` were written independently by me.
+Credit is due to Yair Linn for providing the source files contained in `bin` and `template`, as well as the code in `simple_ipod_solution.v` not under the "my code" header. All other files in `src` and `tb` were written independently by me.

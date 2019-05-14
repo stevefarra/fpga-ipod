@@ -18,6 +18,7 @@ The volume indicator is controlled by a PicoBlaze microprocessor, which takes th
 <p align="center">
   <img src="https://i.imgur.com/Ms2Js9M.png" width=500>
 </p>
+
 ## Demonstration
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/31jtuOLA0xw/0.jpg)](https://www.youtube.com/watch?v=31jtuOLA0xw)

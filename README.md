@@ -1,5 +1,5 @@
 # FPGA iPod
-This hardware demonstrates a music player implemented on a DE1-SOC development board. 
+This hardware demonstrates a music player implemented on a DE1-SoC development board. 
 
 After an audio file is loaded into flash memory,as well as a pair of headphones and a keyboard connected to the board, 
 the song can be played and paused using the `E` and `D` buttons, respectively. 

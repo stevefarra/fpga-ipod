@@ -1,7 +1,7 @@
 # FPGA iPod
 This hardware demonstrates a music player implemented on a DE1-SoC development board. 
 
-After an audio file is loaded into flash memory,as well as a pair of headphones and a keyboard connected to the board, 
+After an audio file is loaded into flash memory, as well as a pair of headphones and a keyboard connected to the board, 
 the song can be played and paused using the `E` and `D` buttons, respectively. 
 Playing the song in the forward and reverse directions is toggled with the `F` and `B` buttons.
 `R` is used to restart the music player. 
